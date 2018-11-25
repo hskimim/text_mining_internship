@@ -1,0 +1,1256 @@
+Journal of the Korean Data Analysis Society (April 2018)
+Vol. 20, No. 2, pp. 923-936
+
+웹보메트릭스 빅데이터를 활용한 암호화폐 홈페이지의 영향력과
+연결망분석*
+박한우1, 박세정21)
+
+요 약
+이 연구는 웹보메트릭스 빅데이터 기법을 활용한 암호화폐 온라인 영향력을 조사했다. 구체적
+으로 2017년 12월 시가총액 톱50개 화폐를 대상으로 온라인연결망을 측정했다. 웹보메트릭스에
+기반한 빅데이터 분석을 실시해 암호화폐 홈페이지와 연결된 외부링크를 조사하여 각 암호화폐
+의 대중적 인지도를 파악하고, 나아가 암호화폐들의 관계적 특성을 분석했다. 연구결과
+bitcoin.org, bitcoin.com, steemit.com의 온라인 영향력이 가장 강한 것으로 나타났다. 특히
+steemit.com이 외부로부터의 링크 수가 가장 많았으며 상호링크 관계망에서 중개자의 위치를 점
+하고 있었다. bitcoin.org은 외향중심성 값이 가장 높게 나타나 적극적인 정보전송자로 자리매김하
+고 있는 반면 bitcoin.com은 내향중심성에서 1등을 차지하면서 권위적 정보허브로서 기능하고 있
+음을 발견했다. 나아가 사회연결망 지표와 와이스(Weiss) 평가점수와의 통계적 상관성을 발견하
+여 빅데이터 분석이 시장 예측도 가능하다는 것을 시사한다. 암호화폐를 둘러싼 정부규제가 계
+량화된 데이터 없이 주관적 비평과 정성적 측면에서 접근되면서 논란이 있는 가운데, 이 논문은
+암호화폐의 현황을 웹보메트릭스 방법으로 측정하여 정책지원의 과학적 수단을 제공한다.
+
+주요용어 : 암호화폐, 가상화폐, 빅데이터, 웹보메트릭스, 사회연결망분석.
+
+1. 서론
+암호화폐의 개념은 Satoshi Nakamoto가 ‘비트코인: 개인 간 전자 현금 시스템’이라는 소논문을
+리스트서브를 통해 공유하면서 세상에 공식적으로 그 모습을 보였다(Nakamoto, 2008). 그리고 2009
+년 1월 3일에 Satoshi가 첫 번째 비트코인을 ‘채굴’하면서 세계 최초의 암호화폐가 등장했다. 물론
+Satoshi 이전에도 암호화폐와 관련된 기술적 문헌이 있지만 Satoshi의 논문과 비트코인을 암호화폐
+의 효시로 간주하는 것에 큰 이견이 없는 편이다(Li, 2017; Yli-Huumo et al., 2016).
+우리 정부는 비트코인 등을 가상화폐로 공식적으로 부르고 있다. 그러나 이건 부적절한 이름이
+다. 가상화폐란 오프라인이 아닌 온라인에서 통용되는 것이다. 가상공간인 ‘세컨드라이프’에서 유
+통되는 화폐인 린든 달러가 대표적이다. 세컨드라이프에서 사람들이 건물을 짓고 물건을 쇼핑하려
+면 돈이 필요하다. 비트코인은 린든 달러처럼 가상세계에서만 통용되는 건 아니다. 비트코인은 블
+록체인(blockchain)이라고 불리는 분산원장(distributed ledger) 기술을 이용하여 보안성을 획기적으로
+개선한 암호화폐이다. 블록체인은 화폐 발행과 거래 내역을 개인-개인(P2P) 분산 네트워크상에서
+다수 컴퓨터가 동시에 기록하고 검증하는 방법이다. 비트코인은 블록체인이 실제로 작동함을 보여
+
+*
+
+홈페이지 수집과 편집을 도와준 백영석과 박효찬에게 이 자리를 빌려 고마움을 표시합니다.
+38541 경북 경산시 대학로 280, 영남대 사이버감성연구소 소장. 언론정보학과·디지털융합비즈니스학과 교수.
+E-mail : hanpark@ynu.ac.kr
+2
+(교신저자) 미국 존캐롤대학교 팀러서트 커뮤니케이션과 극예술학과 조교수. E-mail : sjpark@jcu.edu
+[접수 2018년 2월 22일; 수정 2018년 4월 5일, 2018년 4월 17일; 게재확정 2018년 4월 20일]
+1
+
+924
+
+박 한 우, 박 세 정
+
+준 첫 번째 이용사례다. 금융거래 정보를 특정 장소에만 저장하면 위험하니, 모든 사람들이 블록처
+럼 나누어 갖고 있자는 아이디어에서 나온 암호통화이다. 이를 위해서 블록에 인간의 지문처럼 고
+유한 해쉬(hash)라는 알고리즘을 삽입한 것을 핵심으로 하고 있다.
+비트코인이 등장하고 얼마 지나지 않아 사람들은 간단한 P2P 거래를 넘어서 비트코인에서 지원
+되지 않는 기능도 제공하는 무언가 새로운 것을 원하게 되었다. 프로그래머들은 비트코인에 구체
+적인 속성을 ‘칠할 수 있는(colored)’ 방법을 고안하기 시작했다. 비트코인 블록 안에 자산이나 데이
+터를 기록하고 누군가 그것을 원하면 전달할 수 있도록 시도했다. 이것이 바로 ‘컬러드 코인’ 혹은
+‘토큰’으로 발전하게 되었다. 비트코인이 토큰의 형태로 실생활에 쓰일 수 있다는 아이디어는 대중
+들의 암호화폐 인지도를 급속도로 높이는데 기여하게 되었다. 비트코인이 토큰의 형태로서 금융자
+산인 주식뿐만 아니라 집과 자동차 같은 부동산 등 어떤 것도 담을 수 있다. 이렇게 되면 특정 기
+관과 국가를 넘어선 보편적 통화의 탄생이다. 토큰경제의 작동원리에 대해서 금융계도 그 혁신성
+에 탄성을 자아냈다. 2013년 11월엔 미국 연방준비은행 의장이 비트코인의 미래가치를 인정하는
+취지의 내용을 미국 의회에 보냈다. 이 소식이 알려지면서 비트코인은 당시 최고 수준인 1,200달러
+까지 치솟았다. 2015년에 신용부도스왑을 발명한 블라이스 마스터스 여사가 비트코인이야말로 새
+로운 금융혁명을 초래한다고 주장해 미국 월가를 놀라게 했다(Robinson, Leising, 2015).
+비트코인으로 교환 가능한 물품과 결제할 수 있는 오프라인 사업장이 늘어나면서 비트코인의
+가격도 가파르게 상승하게 되었다. Coinmap.org에 따르면, 전 세계에서 암호화폐를 받는 사업장이
+9천개라고 한다. 통계에 포함되기 힘든 소규모 상점까지 합하면 10만개를 넘는다. P2P 웹사이트인
+Paxful.com에선 비트코인과 물물거래 가능한 물품이 아마존, 구글, 애플 등과 같이 디지털 기업의
+선물쿠폰부터 마트 상품권까지 망라되어 있다. 결제도 체크카드, 신용카드, 송금 등으로 다양하다.
+국제학술지 이피에이치(EPH) 저널은 논문 출판 비용을 비트코인으로도 받는다(EPH, 2017). 유럽에
+서는 ‘블록틱스(blocktix)’이라는 암호화폐로 공연티켓을 구매할 수 있다. 부산에 있는 한 카페에선
+‘그로스티코인(groesticoin)’이라는 암호화폐로 커피를 살 수 있다.
+이처럼 블록체인에 바탕을 둔 암호화폐의 재산적 가치와 거래기능이 많은 사람들에게 매력적으
+로 다가오면서, 암호화폐를 둘러싼 사회적 논란과 정책적 개입도 커지고 있다. 이러한 현상에 주목
+하여 몇몇 조사와 연구가 암호화폐를 둘러싼 여러 현상을 과학적으로 수량화하고 분류하려는 노력
+을 해 왔다. 하지만 암호화폐의 실제적 인지도와 산업전반에 관한 계량화된 분석과 체계적 연구는
+여전히 취약한 수준에 머무르고 있다. 따라서 이 연구는 웹보메트릭스(webometrics)에 기반한 빅데
+이터 기법을 통해서 암호화폐의 온라인 실재도와 영향력에 대해 계량화된 시각으로 살펴보고 고찰
+하고자 한다.
+
+2. 조사연구 동향
+암호화폐를 조사하거나 연구한 자료는 많지 않으나, 기존 문헌의 대상과 범위를 살펴보면 2 가
+지로 분류된다. 첫째, 암호화폐의 인지도와 이용도 및 산업현황을 보고한 조사들이 있다. 둘째, 암
+호화폐를 시사적으로 조사한 보고서가 아닌 학술적 연구들이다. 그런데, 대부분의 학술연구는 공학
+적 이슈에 초점을 두고 있으며 간혹 재정 관련 논문들이 출판되고 있다.
+첫째, 국내에서는 기업에서 시장조사를 위해서 편의적으로 실시한 마케팅 여론조사 수준의 보고
+서만 존재한다. 이들은 신뢰성이 담보되지 않아서 문헌연구에서 제외했다. 국내 문헌 가운데 한국
+은행에서 2013년에 발간한 보고서가 눈에 띄지만, 이 역시 비트코인 소개에 머물러 있을 뿐이다
+(Lee, 2013). 해외도 크게 다르지 않지만, 주목할 만한 조사들을 소개하면 다음과 같다. 먼저 캐나
+
+웹보메트릭스 빅데이터를 활용한 암호화폐 홈페이지의 영향력과 연결망분석
+
+925
+
+다은행에서 최근 발간한 보고서는 최초의 전국 조사이다(Henry et al., 2017). 체계적 샘플링을 통해
+서 캐나다인 1,997명을 2단계 방법으로 비트코인 거래활동을 조사했다. 그 결과 캐나다 인구의 약
+64퍼센트가 비트코인을 들어봤지만, 단지 2.9퍼센트만 소유하고 있었다. 비트코인 보유자는 조사대
+상자들의 58명에 불과했다. 여성보다 남자들이 비트코인에 대해서 더 많이 알고 있었다. 인지도는
+대학 졸업자일수록 높았다. 근로자의 비트코인 인지도는 51%였으나 실업자의 73%는 비트코인을
+알고 있다고 대답했다. 은퇴자의 6%가 비트코인을 알고 있었다. 비트코인 소유여부를 보면 젊고
+고학력일수록 많이 갖고 있었다. 지식수준과 비트코인의 채택은 양의 상관성을 보였다(p<0.001).
+이 연구에서 채택한 빅데이터 분석과 유사한 조사로 인용할만한 사례로는 미국 언론사 CNBC
+(2017)와 Lu et al.(2017)을 들 수 있다. 이들은 소셜미디어 빅데이터를 이용해 미국과 타이완의 암
+호화폐 인지도와 보급률을 측정했다. 먼저 CNBC를 보면 트위터 데이터를 수집하여 비트코인과 여
+러 알트코인의 전국 인지도를 조사했다. 2017년 1월부터 11월까지 미국 전체에서 이더리움과 라이
+트코인에 대한 관심이 폭발적으로 증가했다. 특히 비트코인 언급도에 비교해서 리플 언급도는 6배
+이상 치솟았다. 흥미롭게도 전통적인 금융과 기술 허브가 아닌 미국 중부지역에서 관심도가 높았
+다. 텍사스와 오하이오의 비트코인, 이더리움, 라이트코인, 리플에 대한 총 언급도가 눈에 띄게 올
+랐다. 시키고 선물거래소가 위치한 일리노이 지역의 관심도는 또한 가장 빠르게 증가하는 지역이
+었다.
+암호화폐 74종의 신용등급을 평가한 미국 와이스(Weiss) 평가기관의 조사가 주목을 끌고 있다.
+이 조사에 따르면, 어떤 코인도 A 등급을 못 받은 가운데 이더리움과 이오스가 B 등급으로 가장
+높았다. 다음으로 에이다, 네오, 스팀이 B-으로 그 뒤를 이었다. 비트코인은 예상과 달리 C+의 낮
+은 성적을 받았다. 신용등급의 평가는 4가지 기준으로 구성되었다(Weiss, 2018a). 첫째, 가격 변동성
+에 기초한 암호화폐의 리스크 지수, 둘째, 평균 투자수익 등을 고려한 보상 지수, 셋째는 이번 평
+가의 가장 핵심부분인 기술 지수이다. 공개된 백서와 공지 내용, 토론방 등 인터넷 평판, 소스코드
+의 개방성과 유연성, 익명성, 재정 정책의 세련성, 거버넌스 능력, 에너지 소비효율성, 확장성, 다른
+블록체인과의 호환성 등이다. 마지막은 오늘날 경제용어로 널리 쓰이고 있는 펀더멘탈 지수이다.
+거래 속도와 확장성, 시장 보급도, 네트워크 보안성, 블록 생산의 탈집중화, 네트워크 용량, 참여자
+참여, 인지도 등이다. 와이스사는 비트코인이 C+를 받은 이유는 리스크와 기술 지수에서 상대적으
+로 낮은 성적을 받았기 때문이라고 설명했다(Weiss, 2018b). 비트코인 가격이 급등락을 반복했으며
+블록체인 운영에 엄청난 전기가 필요하기 때문이다. 비트코인의 거래량이 비자카드 수준으로 많아
+지면 전 세계의 전기 사용량의 절반을 차지하기 때문에 5천 개의 핵발전소가 필요하다는 주장도
+있었다(Stinchcombe, 2017).
+산업분야의 보고서로는 캠브리지대에서 최근 발행한 ‘글로벌 암호화폐 벤치마킹 연구보고서’가
+유일무이하다(Hileman, Rauchs, 2017). 이 보고서에 따르면, 암호화폐 산업은 거래소, 지갑, 결제, 채
+굴의 4가지로 구성된다. 그리고 최소 1,876명의 전일제 근로자가 암호화폐 산업분야에 종사 중이라
+고 한다. 사회적 공개를 꺼리는 채굴회사들의 종업원 수까지 포함하면 이 산업분야에 고용된 근로
+자는 더 많다고 한다. 그리고 서로 다른 산업군에 소속된 기업들의 서비스 복합화가 빠르게 진행
+중이다. 지갑 내부에 충전을 위해 거래 서비스를 삽입하고, 거래소는 암호화폐의 안전한 보관을 위
+해 지갑기능을 제공한다. 결제회사들은 암호화폐의 저장과 이체가 가능한 플랫폼을 지향하기에 지
+갑과 환전 기능을 종종 포함한다. 보고서를 좀 더 살펴보면, 현재 38개국에 걸쳐 약 150개의 암호
+화폐 기업들이 4개 산업군에서 다양하게 활동 중이다. 미국이 32개로 가장 많았다. 그 뒤를 중국이
+29개로 바짝 추격중이다. 3위인 영국은 16개로 1, 2위와 꽤 큰 격차를 보였다. 그런데 한국은 비트
+
+926
+
+박 한 우, 박 세 정
+
+코인 거래량의 규모는 세계적 수준이지만 이 분야의 대표 기업은 부재하다. 결제회사로만 국한하
+면 한국의 성적은 27개국의 48개 결제회사에서 10%로 3위를 차지했다. 하지만, 지원되는 국가별
+통화는 미국 달러 56%, 유로 56%, 영국 파운드 42%, 중국 인민화 33%, 일본 엔 23%로 나타났다.
+한국 원화는 15%로 나이지리아 나이라와 동일한 규모였다. 마지막으로 전 세계의 비트코인 ATM
+의 95%가 북미와 유럽에 있다. 미국과 캐나다에 전 세계의 ATM의 59%와 15%가 존재한다. 유럽
+에는 21%가 있다. 아시아-태평양 지역은 5%다. 아프리카, 중동, 남미는 1%다.
+둘째, 학술연구는 앞서 언급한 대로 블록체인의 기술적 이슈에 초점을 두는 연구가 대부분이다.
+공학 분야에서 블록체인 기술연구의 현황파악을 위해서 41개의 주요논문을 체계적으로 리뷰한
+Yli-Huumo et al.(2016)이 대표적이다. 자료수집을 위해서 6개 데이터베이스를 이용했다: IEEE
+Xplore, ACM Digital Library, Springer Link, ScienceDirect, Ebsco, PLOS One. 이들에 따르면, 블록체
+인 논문들은 2012년 이후에 출판되기 시작되어, 2014년에도 조사 대상의 39%인 16개 논문이, 2015
+년에 56%인 23개가 게재되기 시작했다. 특이한 점은 2014년에는 블록체인 기술개선 논문이 증가했
+으며 2015년에는 기술보완 관련논문이 감소하면서 그 대신에 기술응용 논문이 증가했다. 지리적
+분포를 보면, 가장 많은 논문이 출판된 국가는 미국(13.31%), 독일(14.6%), 스위스(12.2%)의 순서로
+나타났다. 논문 출처는 컨퍼런스(23, 56%) 워크숍(12, 29.2%) 심포지움(4, 9.7%) 북채프터(1, 2.4%)
+저널(1, 2.4%).
+Yli-Huumo et al.(2016)과 유사하게 Lu et al.(2017)은 2008년부터 2016년까지 발행된 저널논문, 기
+술보고서, 온라인자료를 수집하였다. 그런데, Lu et al.(2017)은 기존 문헌을 검토하여 비트코인 관
+련논의를 8개 분야로 분류하였다: 금전거래 시스템, 화폐통화, 시장 신뢰도, 신용위기, 기술응용, 거
+래 플랫폼, 보안성, 익명성. 그리고 이 분류항목을 타이완 인터넷 커뮤니티의 비트코인 데이터에
+적용하여 2013년부터 2016년까지 구전량(amount of word-of-mouth)과 긍/부정 감성을 조사하였다. 주
+요결과를 보면, 금전거래 시스템과 화폐통화와 관련논의는 조사기간 내내 사람들이 지속적 관심을
+보인 주제항목이었다. 점차 증가세를 보인 신용위기 주제는 긍정도 있었지만, 대부분이 부정적이었
+다. 한편 기술응용 분야는 구전량이 상대적으로 적었으나 긍정평가가 많은 편이었다. 통화 시스템
+과 비교해 거래 플랫폼 이야기는 초기에는 찾기 힘들었으나 빠르게 증가했다. 하지만 거래소 도난
+사건 이후에 부정적 감성이 최대로 나타났다. 보안관련 이슈도 2015년 하반기부터 증가세를 보였
+으나, 부정적인 톤이 대부분이었다.
+마지막으로 비트코인을 재정 관점에서 접근한 논문들의 동향을 보면, 비트코인이 기존의 공유체
+제를 변화시킬 것인가, 즉 파괴적 혁신을 가져올 가능성에 대해 논의해왔다. 비트코인이 오픈 소스
+프로토콜을 기반으로 하고 탈중심적 마켓이라는 점에서 스타트업 회사들이 기존의 시장 지배구조
+에 진입할 수 있는 새로운 기회라는 점에서 그 가능성이 제시되었다(Worner et al., 2016). Worner
+et al.(2016)은 비트코인 열풍과 더불어 생겨난 신생 스타트업․벤처 기업들을 분류하여 금융서비스
+부문뿐만 아니라 디지털 자산, 거래소, 공증 서비스 등 다양한 산업 분야에서 지각변동이 일고 있
+음을 보고했다. 또 다른 논쟁은 비트코인을 어느 정도로 규제해야 하는 지에 대한 사안이다. 비트
+코인이 중앙은행이 발행하는 법적통화를 대체할 수 있다는 점에서 탈세, 파산, 마약거래, 자금 세
+탁 등 불법적으로 이용될 위험성이 있기 때문이다(Lee, 2015). 미국에서는 비트코인 파생상품들이
+물리적 인도, 대체불가능성, 독립적으로 거래되지 않는 점 등의 기술적 속성으로 인해 상품거래법
+규제에서 자유로운 편이다(Brito et al., 2014).
+동향을 보면 암호화폐 정책이 체계적으로 마련되기 위해선 현황조사가 선행되어야 한다. 즉 암
+호화폐 현상을 과학적으로 수량화하고 분류해야 한다. 보급과 인식률부터 시작하여 역기능과 부작
+
+웹보메트릭스 빅데이터를 활용한 암호화폐 홈페이지의 영향력과 연결망분석
+
+927
+
+용, 신용등급과 산업기술, 기술보완과 응용분야에 대한 과학적 측정과 평가분석을 시도해야 한다.
+
+3. 연구방법
+3.1. 데이터 수집
+이 논문은 2017년 12월 23일 현재 coinmarketcap.com에서 시가총액 기준으로 톱50개 화폐를 대상
+으로 하였다. 여기에 등재된 암호화폐의 홈페이지를 수집한 결과 3개가 복수 웹사이트를 운영하였
+다. 해당 홈페이지는 bitcoin.com과 bitcoin.org, litecoin.org과 litecoin.com, steem.io와 steemit.com이다.
+따라서 이 논문의 분석대상이 된 최종 홈페이지는 총 53개이다. 데이터 수집과 파싱(parsing)은 웹
+보메트릭 분석기(Webometric Analyst) 2.0을 이용하여 2018년 1월에 수집하였다(Park et al., 2016). 웹
+보메트릭 분석기는 bing.com을 기본엔진으로 탑재하고 있다(Thelwall, 2014). worldwidewebsize.com에
+따르면, bing.com이 색인한 웹페이지의 규모는 (연구 기간 동안에) 약 2억6천만 개로 알려져 있다.
+이 논문에서는 bing.com이 검색 에이피아이(API) 서비스를 통해서 연구자에게 실제로 제공한 22584
+개의 웹페이지를 분석대상으로 하였다.
+
+3.2. 분석방법과 소프트웨어
+웹보메트릭스에 기반한 빅데이터 분석은 단어나 구절의 온라인 언급빈도와 공출현도를 측정하
+는 의미론적 방법과 웹사이트의 외부링크 수와 상호연결성을 측정하는 (피)인용 접근법으로 구분
+할 수 있다(Park, Park, 2011). 이 논문은 암호화폐 홈페이지를 분석단위로 한 인용기반 측정법이다.
+구체적으로 말하면 암호화폐 홈페이지와 연결된 외부링크를 조사하기 위해서 웹보메트릭 분석
+기의 마법사-링크 영향력 보고서(wizard-link impact report) 옵션을 이용하였다. 마법사 메뉴에서 링
+크 데이터 수집으로 바로 이동할 수 있다. 각 암호화폐 홈페이지에 연결을 걸어온 외부 웹페이지
+의 수를 조사하면 온라인 공간의 발자국을 찾을 수 있다. 그리고 그 값은 해당 암호화폐의 대중적
+인지도 혹은 중요도를 가늠하는데 도움을 준다. 홈페이지 간 서로 링크를 맺고 있는지 여부는 마
+법사-링크망 그림(wizard-link network diagram)을 활용하여 시각화로 바로 이동할 수 있었다. 웹보메
+트릭 분석기에서 획득한 데이터의 사회연결망분석(social network analysis, SNA)와 시각화를 위해서
+유씨아이넷(Ucinet)과 넷드로(Netdraw)를 활용하였다(Lee et al., 2017). 유씨아이넷은 SNA에서 오랫
+동안 활용된 소프트웨어이며, 넷드로는 시각화 도구이다. 네트워크 분석은 각 암호화폐의 인기도를
+개별적으로 파악하는 것에서 한 발 더 나아가 관계적 특성을 찾는데 유용하다. 분석대상인 암호화
+폐의 위치와 역할을 구조적 관점에서 시각적으로 지도화할 수 있다.
+
+4. 연구결과
+홈페이지 가운데 히트수(hit counts)가 가장 많은 암호화폐는 steemit.com(2320000)이었다. 다음으
+로 bitcoin.com(807000), tether.to(652000), binance.com(527000), bitcoin.org(439000), z.cash(412000),
+dogecoin.com(330000), steem.io(278000), ethereum.org(276000) 순서로 많았다. 히트수는 암호화폐의 전
+반적 대중성을 보여준다. steemit.com이 1위를 차지한 배경은 이 사이트가 많은 사람들이 참여한 온
+라인 커뮤니티이기 때문이다. steemit.com은 유용한 포스팅을 올린 게시자와 해당 포스팅의 콘텐츠
+품질을 알아채고 조기에 추천한 이용자에게 동명의 암호화폐인 steem을 보상으로 제공한다. 이러한
+운영방식이 steemit.com을 짧은 시간에 인기 웹사이트로 부상시켰다(Thelwall, 2017). 따라서 steem의
+공식 웹사이트인 steemit.com과 steem.io 2개 모두가 최상위에 포함된 것은 그렇게 놀라운 일이 아
+
+박 한 우, 박 세 정
+
+928
+
+니다. 한편 히트수는 검색엔진이 온라인 공간을 크롤링한(crawling) 결과에 기초하고 있다. 그러므
+로 특정 웹페이지로부터 한 암호화폐에 대한 언급(mention)이 많아지면 값이 높아질 수 있으므로
+신중한 해석이 필요하다.
+
+Rank
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+
+Homepages
+steemit.com
+bitcoin.com
+tether.to
+binance.com
+bitcoin.org
+z.cash
+dogecoin.com
+steem.io
+ethereum.org
+kucoin.com
+sia.tech
+golem.network
+ripple.com
+augur.net
+omisego.network
+litecoin.org
+nem.io
+eos.io
+vechain.com
+decred.org
+status.im
+veritaseum.com
+stellar.org
+dragonchain.com
+populous.co
+dash.org
+lisk.io
+
+Table 1. Hit counts of cryptocurrency homepages
+Hit counts
+Rank
+Homepages
+2320000
+28
+digibyte.co
+807000
+29
+iota.org
+652000
+30
+h.cash
+527000
+31
+neo.org
+439000
+32
+funfair.io
+412000
+33
+litecoin.com
+330000
+34
+getmonero.org
+278000
+35
+bitshares.org
+276000
+36
+wavesplatform.com
+270000
+37
+bitcoincash.org
+204000
+38
+vergecurrency.com
+200000
+39
+bytecoin.org
+191000
+40
+stratisplatform.com
+180000
+41
+qtum.org
+171000
+42
+bitconnectcoin.co
+165000
+43
+cardanohub.org
+163000
+44
+komodoplatform.com
+155000
+45
+xpcoin.io
+144000
+46
+tronlab.com
+140000
+47
+icon.foundation
+133000
+48
+bitcoingold.org
+132000
+49
+ardorplatform.org
+129000
+50
+raiblockscommunity.net
+124000
+51
+ethereumclassic.github
+113000
+52
+dentwireless.com
+104000
+53
+kinecosystem.org
+104000
+
+Hit counts
+98300
+89100
+88600
+79500
+75000
+43900
+33700
+33600
+31200
+27000
+24700
+22200
+21000
+20900
+18200
+11500
+11500
+10700
+8890
+8360
+8240
+5010
+4570
+4340
+2410
+2290
+
+히트수는 검색엔진이 자체 알고리즘으로 계산한 추정치(estimated value)이다(Lee, Park, 2016). 이
+에 비교해서 Table 2는 검색엔진이 중복과 스팸 웹페이지 등을 정제한 이후에 이용자에게 실제로
+제공하는 데이터를 정리한 것이다. 검색엔진은 히트수가 아무리 높더라도 1000개 이상의 결과를
+보여주지 않는다. 왜냐하면 사람들이 검색엔진이 제공한 결과화면에서 첫 페이지에서 더 깊이 들
+어가지 않으므로 투자대비수익(return on investment)이 낮기 때문이다. 따라서 Table 2의 도메인과
+최상위도메인(top level domains, TLDs) 값은 히트수와 차이가 있다. 암호화폐 홈페이지를 링크한 도
+메인이 많을수록 그 코인의 온라인 영향력이 높다고 간주할 수 있다. 사람들이 해당 홈페이지가
+유용하거나 중요하다고 인식하므로 연결을 설정하기 때문이다. 그리고 TLD 값은 암호화폐의 글로
+벌 영향력을 측정한다.
+TLD 빈도는 일반형과 국가형으로 분류가능하다. 일반형은 .com, .org, .net, .edu 등을 말하며, 국
+가형은 .au(호주), .de(독일), .jp(일본), .kr(한국) 등이다. 예를 들어, bitcoin.org에 가장 많이 링크를
+보낸 TLD는 다음과 같다. .com(총 389개의 도메인 가운데 193개, 49.6%)이 가장 많았으며 .org(66
+
+웹보메트릭스 빅데이터를 활용한 암호화폐 홈페이지의 영향력과 연결망분석
+
+929
+
+개, 17.0%), .net(20개 5.1%), .info(9개, 2.3%), .io(8개, 2.1%), .it(8개, 2.1%) 순서였다. 반면에
+xpcoin.org은 782개의 도메인 가운데 740개인 94.6%가 .com이 차지했다. .jp(8개, 1.0%), .net(6개,
+0.8%), .org(5개, 0.6%), .io(4개, 0.5%)가 그 뒤를 이었다. TLD 분석결과에서 눈에 띄는 것이 .io이다.
+이 도메인은 .com이 포화상태가 되면서 정보기술 분야의 신생 벤처 기업이 주로 사용 중이다. 한
+편 53개 암호화폐 홈페이지를 대상으로 도메인과 TLD의 빈도 간 상관계수는 0.355(p<0.01)로 나타
+났다.
+Table 3은 암호화폐 간 직접적 연결을 근거로 일원성 인접행렬(1-mode adjacency/proximity matrix)
+를 구성하여 다양한 중심성(centrality) 값을 계산한 결과이다. 이 과정에서 유씨아이넷-연결망-중심
+성/권력-다중지표계산(Ucinet-network-centrality/power-multiple measures)을 옵션을 선택하였다. 여러 중
+심성 지표들을 1번의 조작으로 계산할 수 있는 장점이 있다. bitcoin.org의 외향중심성(OutDeg) 값이
+가장 높게 나타났다. 외향중심성 값은 bitcoin.org가 분석대상이 된 다른 52개 홈페이지를 154006회
+나 고유주소(uniform resource locator) 링크방식으로 인용한 것을 말한다. 즉 갑돌이가 같은 반 친구
+인 갑순이, 길동이, 심청이, 흥부에게 직접 전화를 건 횟수이다. 다음으로 외향중심성 값이 100을
+넘어선 암호화폐는 steemit.com 80811, bitcoin.com 10800, lisk.io 5455, dash.org 1903, ethereum.org
+152이다. 외향중심성 값이 자신이 주도한 외부와의 연결성을 보여주는 지표라면, 내향중심성(Indeg)
+
+Rank
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+
+Table 2. A breakdown of domains and TLDs toward cryptocurrency homepages
+Homepages
+Domains
+Rank
+Homepages
+Domains
+xpcoin.io
+782
+28
+bitcoingold.org
+280
+bitconnectcoin.co
+756
+29
+wavesplatform.com
+269
+status.im
+669
+30
+icon.foundation
+267
+populous.co
+666
+31
+getmonero.org
+266
+ethereumclassic.github
+655
+32
+ripple.com
+259
+tether.to
+556
+33
+nem.io
+259
+digibyte.co
+521
+34
+cardanohub.org
+241
+steem.io
+482
+35
+kucoin.com
+241
+stratisplatform.com
+457
+36
+bitshares.org
+233
+vechain.com
+428
+37
+litecoin.com
+220
+vergecurrency.com
+404
+38
+veritaseum.com
+195
+bitcoin.org
+389
+39
+komodoplatform.com
+186
+golem.network
+387
+40
+iota.org
+181
+tronlab.com
+374
+41
+neo.org
+176
+funfair.io
+364
+42
+omisego.network
+171
+bitcoincash.org
+362
+43
+qtum.org
+154
+raiblockscommunity.net
+361
+44
+dash.org
+152
+kinecosystem.org
+355
+45
+ardorplatform.org
+149
+bitcoin.com
+351
+46
+bytecoin.org
+142
+sia.tech
+339
+47
+lisk.io
+128
+augur.net
+336
+48
+z.cash
+96
+stellar.org
+328
+49
+steemit.com
+95
+ethereum.org
+309
+50
+dragonchain.com
+92
+dogecoin.com
+309
+51
+dentwireless.com
+83
+litecoin.org
+306
+52
+decred.org
+75
+binance.com
+301
+53
+h.cash
+56
+eos.io
+296
+
+박 한 우, 박 세 정
+
+930
+Rank
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+
+Homepages
+bitcoin.org
+steem.io
+bitcoin.com
+golem.network
+getmonero.org
+sia.tech
+bitcoincash.org
+ethereumclassic.github
+wavesplatform.com
+ethereum.org
+bitcoingold.org
+status.im
+augur.net
+litecoin.org
+stellar.org
+cardanohub.org
+litecoin.com
+dogecoin.com
+vergecurrency.com
+binance.com
+vechain.com
+kucoin.com
+nem.io
+icon.foundation
+eos.io
+tronlab.com
+bitconnectcoin.co
+
+TLDs
+48
+45
+43
+43
+42
+41
+40
+40
+39
+36
+34
+34
+34
+33
+33
+32
+32
+32
+31
+31
+30
+29
+28
+28
+27
+25
+25
+
+Rank
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+
+Homepages
+ardorplatform.org
+dash.org
+populous.co
+neo.org
+bitshares.org
+stratisplatform.com
+veritaseum.com
+iota.org
+omisego.network
+digibyte.co
+komodoplatform.com
+bytecoin.org
+tether.to
+xpcoin.io
+ripple.com
+lisk.io
+qtum.org
+raiblockscommunity.net
+z.cash
+dragonchain.com
+kinecosystem.org
+funfair.io
+decred.org
+dentwireless.com
+steemit.com
+h.cash
+
+TLDs
+25
+24
+24
+23
+23
+23
+23
+22
+21
+21
+21
+20
+20
+20
+19
+19
+15
+15
+15
+15
+14
+14
+13
+12
+10
+10
+
+은 남으로부터 지목된 연결성을 측정한다. bitcoin.com의 Indeg 값이 179802로 1등을 차지하여 피인
+용도가 가장 높았다. 내향중심성 값이 2000을 넘어선 상위 암호화폐는 bitcoin.org 9047, z.cash 7123,
+steem.io 6187, binance.com 5196, eos.io 4070, dash.org 3791, ripple.com 3512, kucoin.com 3204,
+bitshares.org 2889, ethereum.org 2188이다. 외향과 내향중심성이 두 홈페이지간의 직접적 인용관계를
+바탕으로 계산된 중심성이면, 매개성(Between) 값은 한 홈페이지가 전체 홈페이지를 촘촘한 그룹으
+로 형성하는데 기여한 중개자의 역할을 측정한다. 매개성에서는 steemit.com이 769.302으로 가장 높
+았다. 그 뒤를 이어 bitcoin.com 570.995, bitcoin.org 187.376, binance.com 177.878, ethereum.org
+102.573의 순으로 나타났다.
+유씨아이넷-도구-산포도(Ucinet-tools-scatter plot)을 이용하여 암호화폐 홈페이지의 서로 다른 중심
+성 값을 시각적으로 비교하였다. 이 옵션은 연결망 데이터의 2차원 시각화에 유용하다. 흥미롭게
+도, 비트코인을 대표하는 2개 웹사이트의 위치는 선명한 비교를 보였다. Figure 1부터 Figure 3에서
+볼 수 있듯이 bitcoin.com은 X축인 내향중심성에서 가장 높은 값을 bitcoin.org은 Y축인 외향중심성
+에서 좌측 최상단에 위치해 있다. Figure 2를 보면, 내향중심성-매개성에서는 steemit.com이 큰 차이
+를 보이고 있지만 bitcoin.com은 두 지표 모두에서 최상위를 차지하고 있다. 외향중심성-매개성의
+산포도인 Figure 3에서도 bitcoin.com과 bitcoin.org은 서로 멀리 떨어져 위치해 있으나 steemit.com은
+중앙 상단을 차지하고 있다. Figure 1부터 Figure 3을 통계적으로 분석한 결과는 Table 4에 정리되
+
+웹보메트릭스 빅데이터를 활용한 암호화폐 홈페이지의 영향력과 연결망분석
+
+931
+
+어 있다. 예상한 대로, 연결정도 중심성을 측정한 2개 지표간 상관성 값이 통계적으로 유의하지 않
+았다. 그렇지만 매개성이 외향과 내향중심성과 유의한 상관성을 보이고 있다. 이것은 암호화폐 커
+뮤니티 내·외부의 중심에 위치한 홈페이지가 다른 웹사이트를 잇는 징검다리 역할도 수행하기 때
+문이다.
+
+ID
+Homepages
+1 bitcoin.com
+2 bitcoin.org
+3 ripple.com
+4 ethereum.org
+5 bitcoincash.org
+6 cardanohub.org
+7 litecoin.org
+8 litecoin.com
+9 nem.io
+10 stellar.org
+11 tronlab.com
+12 iota.org
+13 dash.org
+14 eos.io
+15 neo.org
+16 getmonero.org
+17 bitcoingold.org
+18 qtum.org
+19 raiblockscommunity.net
+20 ethereumclassic.github
+21 lisk.io
+22 bytecoin.org
+23 sia.tech
+24 bitconnectcoin.co
+25 icon.foundation
+26 vergecurrency.com
+27 bitshares.org
+
+Table 3.
+OutDeg Indeg
+10800 179802
+154006 9047
+13
+3512
+152
+2188
+3
+1241
+19
+106
+10
+82
+10
+112
+29
+1249
+0
+1541
+0
+33
+1
+1949
+1903 3791
+1
+4070
+0
+1776
+5
+849
+2
+580
+32
+103
+0
+29
+0
+862
+5455
+786
+1
+89
+28
+1949
+0
+60
+6
+57
+1
+1901
+1
+2889
+
+Figure 1. Indeg(X)-OutDeg(Y)
+
+Multiple centrality measures
+Between ID
+Homepages
+570.995 28 omisego.network
+187.376 29 z.cash
+8.929
+30 status.im
+102.573 31 ardorplatform.org
+0
+32 stratisplatform.com
+0.143
+33 binance.com
+1.035
+34 dogecoin.com
+4.16
+35 populous.co
+5.316
+36 tether.to
+0
+37 steem.io
+0
+38 steemit.com
+0.904
+39 digibyte.co
+33.107 40 wavesplatform.com
+17.083 41 kinecosystem.org
+0
+42 vechain.com
+0.167
+43 h.cash
+2.467
+44 xpcoin.io
+2.616
+45 komodoplatform.com
+0
+46 dragonchain.com
+0
+47 augur.net
+1.286
+48 kucoin.com
+0
+49 golem.network
+7.645
+50 veritaseum.com
+0
+51 dentwireless.com
+0
+52 decred.org
+0
+53 funfair.io
+2.312
+
+Figure 2. Indeg(X)-Between(Y)
+
+OutDeg Indeg
+4
+67
+91
+7123
+6
+1947
+0
+54
+11
+971
+76
+5196
+0
+73
+0
+64
+0
+1283
+8
+6187
+80811 1359
+0
+768
+12
+1453
+6
+5
+0
+29
+11
+70
+0
+25
+13
+108
+1
+31
+1
+98
+19
+3204
+0
+1605
+2
+1040
+0
+17
+22
+77
+7
+72
+
+Between
+0.143
+65.802
+51.744
+0
+0.143
+177.878
+0
+0
+0
+15.883
+769.302
+0
+1.726
+0
+0
+20.056
+0
+1.647
+26.944
+0
+12.716
+0
+0
+0
+0.902
+0
+
+Figure 3. OutDeg(X)-Between(Y)
+
+Figure 1-3. Scatter plot of three centralities
+
+932
+
+Item
+OutDeg
+Indeg
+Between
+**Significant at p<0.001
+
+박 한 우, 박 세 정
+
+Table 4. Correlation between network centrality values
+OutDeg
+Indeg
+1
+.074
+1
+
+Between
+.532**
+.573**
+1
+
+Figure 2는 넷드로-편집-그래프이론-스프링(Netdraw-layout-graph theory-spring embedding)을 이용하
+였다. 이 레이아웃의 특징은 중심성이 높은 홈페이지가 시각화의 중앙에 위치하도록 하면서 인력
+(引力)과 척력(斥力)의 물리법칙을 이용해 분석대상이 중첩되지 않도록 최적화하는 것이다. 3개 중
+심성 지표에서 고르게 상위를 차지한 steemit.com이 정중앙에 위치해 있다. 그 주위를 dash.org
+bitcoin.com binance.com bitcoin.org z.cash 등이 둘러싸면서 핵심부를 형성하고 있다. 중복을 제외하
+면 총 280개 관계(선)이 있으며, 선의 굵기는 홈페이지간의 연결빈도가 많을수록 두껍게 작성되어
+있다. 이 과정에서 가장 높은 값을 분모로 해서 정규화(normalized) 시켜서 최대값이 10이 넘지 않
+도록 조정했다. 이렇게 되면 선들이 겹치는 것을 방지하고 관계강도의 상대적 비교에 유용하다. 선
+의 화살촉은 관계방향을 표시한다. 280개 가운데 양쪽 모두 화살촉이 표시된 선은 118개로 42.1%
+이다. 홈페이지를 나타난 동심원의 크기는 호혜성(reciprocity) 지표를 이용하였다. 호혜성이란 두 홈
+페이지가 쌍방관계를 갖는 비율이다. 즉 한 쪽이 일방적으로 주도하거나 피동적으로 받는 관계가
+아니라 서로 주고받는 정도이다(Lee, et al., 2017). 221개 쌍(dyad)에서 26.7%인 59개 쌍이 대칭적
+관계가 있었다. 이 과정에서 유씨아이넷-연결망-응집도-호혜성(Ucinet-network-cohesion-reciprocity)을
+이용하였다. 특히 Figure 4에서는 호혜성 지표에서 대칭성/외향성(Sym/Out) 값이 높을수록 동심원을
+크게 작성했다. 대칭성/외향성 값은 한 홈페이지가 다른 홈페이지에 링크를 보낸 경우에 상대방 홈
+페이지로부터 링크를 받은 비율이다. 흥미롭게도, 외곽에 위치한 bytecoin.org bitcoingold.org
+litecoin.org litecoin.com komodoplatform.com가 높은 값을 보였다. 중심부 홈페이지에서는 bitcoin.org
+z.cash bitcoin.com이 눈에 띈다.
+
+Figure 4. Social network diagram
+
+웹보메트릭스 빅데이터를 활용한 암호화폐 홈페이지의 영향력과 연결망분석
+
+933
+
+마지막으로 이 논문에서는 SNA 기반한 다양한 지표와 와이스 평가점수와의 통계적 상관성 테
+스트를 시도하였다. 이 연구의 분석대상인 50개 암호화폐 가운데 29개가 와이스 평가에 포함되어
+있었다. 2개 홈페이지를 운영한 3개 암호화폐를 고려하면 총 31개의 홈페이지를 대상으로 통계분
+석을 실시하였다. 이 과정에서 와이스 평가는 각 암호화폐를 실제 점수가 아니라 등급으로 평가했
+기에 서열 상관계수인 Spearman rho를 측정했다. Table 4를 보면, 와이스 평가와 통계적으로 유의미
+한 SNA 지표는 히트수, 매개성, 외향2단계(Out2Step), 외향평균쌍방거리(OutARD), 내향평균쌍방거
+리(InARD), 2단계매개성(2StepBet)로 나타났다. 외향2단계와 2단계매개성 값들은 k-단계 도달성
+(k-step reach) 지표의 한 종류로서 k단계만큼 떨어진 홈페이지(node) 개수를 고려하여 계산한다. 따
+라서 k=1은 연결정도 중심성과 동일하다. 암호화폐 홈페이지 연결망은 링크를 보내고 받는 방향성
+이 있기에 내향-도달성(in-reach)와 외향-도달성(out-reach)가 각각 계산된다. 2단계매개성(2StepBet)는
+매개성에 기반하여 계산된 도달성(reachability) 값이다. ARD는 앞서 언급한 호혜성 지표에서 나온
+것으로 평균쌍방거리(average reciprocal distance)를 의미한다.
+Table 4. Correlation between Weiss ratings and SNA indicators
+　
+Weiss ratings Hit counts
+Between
+Out2Step
+OutARD
+InARD
+Weiss ratings
+1.000
+.470**
+.508**
+.518**
+.509**
+.471**
+Hit counts
+1.000
+.519**
+.357**
+.422**
+.592**
+Between
+1.000
+.753**
+.808**
+.660**
+Out2Step
+1.000
+.969**
+.488**
+OutARD
+1.000
+.566**
+InARD
+1.000
+2StepBet
+**Significant at p < 0.001
+
+2StepBet
+.458**
+.538**
+.979**
+.747**
+.827**
+.670**
+1.000
+
+5. 결론
+연구결과를 요약하면, bitcoin.org bitcoin.com steemit.com의 온라인 영향력이 가장 강한 것으로 나
+타났다. steemit.com이 외부로부터의 링크 수가 가장 많았으며 상호링크 관계망에선 중개자의 위치
+를 점하고 있었다. bitcoin.org은 외향중심성 값이 가장 높게 나타나 적극적 정보전송자로 자리매김
+한 경향이 강했다. bitcoin.org가 정보확산에 초점을 맞췄다면, bitcoin.com은 내향중심성에서 1등을
+차지하면서 권위적 정보허브로서 기능하고 있었다. 덧붙여 ethereum.org dash.org z.cash ripple.com
+등이 톱 웹사이트 인근에 위치하면서 정보연결형 전략을 구사하고 있었다. 나아가 SNA 지표와 와
+이스 평가와의 통계적 상관성은 웹보메트릭스에 기반한 빅데이터 분석이 시장 예측도 가능하다는
+것을 시사한다. 암호화폐 홈페이지에 대한 네티즌의 반응과 관계를 검토하는 것이 해당 암호화폐
+의 실제 가치를 살펴보는데 유용하다는 것이다(Lee, Park, Park, 2017). 홈페이지의 콘텐츠가 우수하
+면 방문자가 늘어나고 암호화폐의 인지도를 높이는 효과가 발생하면서 해당 화폐가 활발하게 유통
+되는 데 긍정적 영향을 미칠 수 있다는 것이다.
+한편 기술진보가 사회발전에 필수적이라면, 암호화폐의 도입과 확산은 피할 수 없을 것으로 보
+인다. 그런데 최근 암호화폐를 둘러싼 정부규제가 계량화된 데이터 없이 주관적 인상비평과 정성
+적(qualitative) 측면에서 접근되면서 사회적 논란이 증폭되고 있다. 암호화폐 문제에 대한 체계적
+문제 진단과 효과적 정책수립을 위해서 구체적 데이터 기반의 대쉬보드(dashboard)가 필요하다. 예
+컨대 coincheckup.com에서는 암호화폐와 관련된 다양한 데이터를 수집하여 비교, 분석, 모니터링할
+수 있는 통계기반의 인터페이스를 제공한다.
+
+934
+
+박 한 우, 박 세 정
+
+이 논문은 빅데이터 시대의 도래와 함께 암호화폐의 현황을 웹보메트릭스 방법으로 측정하여
+정책지원의 과학적 수단으로 기능할 수 있다. 우리 국민의 암호화폐 거래량과 관심도를 생각하면,
+후속 연구에서는 조사대상을 확대하고 새로운 디지털자산을 둘러싼 버즈(buzz)와 감성분석도 수행
+하여 그 결과를 시각화할 수 있기를 기대해 본다. 나아가 이 연구에서 찾은 히트수 데이터를 기존
+의 사회경제통계 등과 결합하고 연결된 외부링크의 내용분석을 통해서 암호화폐 산업의 규모와 융
+합화의 방향을 찾는다면 실효성 있는 정책수립이 추진가능하다. 예를 들어 암호화폐 글로벌 인지
+도와 국가별 보유현황을 SNA 기반의 다양한 지표들과 매쉬업(mash-up)해서 의사결정의 과학적 근
+거로 활용할 수 있다.
+
+References
+Brito, J., Shadab, H., Castillo, A. (2014). Bitcoin financial regulation: Securities, derivatives, prediction markets, and
+gambling, The Columbia Science & Technology Law Review, 16, 144-221.
+CNBC (2017, Dec. 20). The late-stage equity bull market could explain a mania like bitcoin. https://www.cnbc.
+com/2017/12/19/bull-market-could-explain-a-mania-like-bitcoin.html
+EPH (2017). Publication charges details. http://ephjournal.com/index.php/bps/feedetail
+Henry, C. S., Huynh, K. P., Nicholls, G. (2017). Bitcoin awareness and usage in Canada, Bank of Canada, 2017
+Hileman, G., Rauchs, M. (2017). Global cryptocurrency benchmakring study, Cambridge Center for Alternative
+Finance.
+Lee, D. K. (2013). Trend and implication of bitcoin, Korea Bank.
+Lee, H. J. (2015). Comparative review on the regulatory treatment of virtual currencies: Focusing on bitcoin,
+Hannam Journal of Law & Technology, 21(3), 303-338. (in Korean).
+Lee, G., Kim, C., Park, H. (2017). Network analysis of SNS-mediated learning community : A Facebook group
+‘magic of flipped-learning’, Journal of the Korean Data Analysis Society, 19(2), 873-884. (in Korean).
+Lee, Y. O., Park, H. W. (2016). Taking the ‘pulse’ of public opinion from non-political spaces during elections,
+Journal of the Korean Data Analysis Society, 18(6A), 2949-2960.
+Lee, U. H., Park, H. C., Park, H. W. (2017). Examining Facebook users in hobby & leisure communities using
+social big data in terms of their reactions and relations, The Journal of Society for Humanities Studies in
+East Asia, 41, 345-382. (in Korean).
+Lee, M., Yoon, H., Park, H. W. (2017). Network analysis of tourist destinations : The case of Daegu city, South
+Korea, Journal of the Korean Data Analysis Society, 19(3A), 1155-1165.
+Li, R. (2017). Blockchain technology report for Tencent.
+Lu, H. K., Yang, L. W., Lin, P. C., Yang, T.-H., Chen, A. N. (2017). A study on adoption of bitcoin in Taiwan
+using big data analysis of social media. Proceedings of the 3rd International Conference on Communication
+and Information Processing, 32-38. https://dl.acm.org/citation.cfm?id=3163046
+Nakamoto, S. (2008). Bitcoin: A peer-to-peer electronic cash system. https://bitcoin.org/bitcoin.pdf
+Park, S. J., Park, H. W. (2011). Webometrics analysis of local media in Daegu and Gyeongbuk area, Journal of the
+Korean Data Analysis Society, 13(3B), 1379-1391. (in Korean).
+Park, J., Seok, S., Park, H. W. (2016). Web feature and co-mention analysis of open data 500 on education
+companies, Journal of the Korean Data Analysis Society, 18(4), 2067-2078. (in Korean).
+Robinson, E., Leising, M. (2015). Blythe Masters tells banks the blockchain changes everything. https://www.
+bloomberg.com/news/features/2015-09-01/blythe-masters-tells-banks-the-blockchain-changes-everything
+Stinchcombe, K. (2017). Ten years in, bobdy has come up with a use for blockchain. https://hackernoon.com/tenyears-in-nobody-has-come-up-with-a-use-case-for-blockchain-ee98c180100.
+Thelwall, M. (2014). Big data and social web research methods. http://www.scit.wlv.ac.uk/~cm1993/papers/
+IntroductionToWebometricsAndSocialWebAnalysis.pdf.
+
+웹보메트릭스 빅데이터를 활용한 암호화폐 홈페이지의 영향력과 연결망분석
+
+935
+
+Thelwall, M. (2017 Online First). Can social news websites pay for content and curation? The SteemIt
+cryptocurrency model. Journal of Information Science, 1-24.
+Weiss (2018a). Weiss cryptocurrency ratings explained. https://weisscryptocurrencyratings.com/ratings/the-weisscryptocurrency-ratings-explained-15.
+Weiss (2018b). Why bitocin is not an A. https://weisscryptocurrencyratings.com/btc/why-bitcoin-is-not-an-a-118
+Wörner, D., Von Bomhard, T., Schreier, Y. P., Bilgeri, D. (2016). The bitcoin ecosystem: Disruption beyond
+financial services?, Twenty-Fourth European Conference on Information Systems, Istanbul, 1-16.
+Yli-Huumo, J., Ko, D., Choi, S., Park, S., Smolander, K. (2016) Where is current research on blockchain
+technology? : A systematic review, PLoS ONE, 11(10), e0163477. https://doi.org/10.1371/journal.pone.0163477
+http://www.worldwidewebsize.com/
+
+936
+
+박 한 우, 박 세 정
+
+Big Data Analysis of Cryptocurrencies : Evidence from Top
+Cryptocurrency Websites
+Han Woo Park1, Sejung Park22)
+
+Abstract
+This study explored presence and influence of cryptocurrencies on the web. A network
+of top 50 cryptocurrencies in terms of market capitalization was mapped on December 12,
+2017. Webometric analytics was conducted to examine online presence and influence of each
+cryptocurrency as well as the relations between cryptocurrencies by tracing the external links
+from each site. The results suggest that bitcoin.org, bitcoin.com and steemit.com were the
+most influential sites based on the number of hit counts. Interestingly, steemit.com received
+the largest amount of links from other sites and bridged the sites of the other
+cryptocurrencies in the network. It is noteworthy that bitcoin.org with the highest outdegree
+centrality played a role as an active informant while bitcoin.com with the highest indegree
+centrality was a hub in the network. This study also found positive correlations between the
+results of Weiss ratings and key social network analysis indicators, including hit counts,
+Betweeness centrality, Out2Step, OutARD, InARD and 2StepBet. The result implies that
+webometric analytics is useful to predict a market. This data-driven approach to online
+influence and presence of cryptocurrencies is valuable to policy-makers who continue to
+debate about the societal impact and the regulations of cryptocurrencies.
+Keywords : cryptocurrency, virtual currency, big data, webometrics, social network
+analysis.
+
+1
+
+Professor, Director in n Cyber Emotions Research Institute, Dept of Media & Communication,
+Interdisciplinary Program of Digital Convergence Business, Yeungnam University, 280, Daehak-ro,
+Gyeongsan-si, Gyeongsangbuk-do, Zip Code 38541, Republic of Korea. E-mail : hanpark@ynu.ac.kr
+2
+(Corresponding Author) Assistant Professor, Tim Russert Department of Communication & Theatre, John
+Carroll University, 1 John Carroll Boulevard O'Malley Center, Room 41 University Heights, Ohio
+44118, USA. E-mail : sjpark@jcu.edu
+[Received 22 February 2018; Revised 5 April 2018, 17 April 2018; Accepted 20 April 2018]
+
+

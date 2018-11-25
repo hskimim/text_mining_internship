@@ -1,0 +1,1490 @@
+Journal of the Korea Academia-Industrial
+cooperation Society
+Vol. 15, No. 7 pp. 4122-4131, 2014
+
+http://dx.doi.org/10.5762/KAIS.2014.15.7.4122
+ISSN 1975-4701 / eISSN 2288-4688
+
+가상화폐의 수용에 영향을 미치는 요인 연구: TAM을 중심으로
+구승환1*, 왕핑1, 선팅팅2
+1
+
+서울과학기술대학교 IT정책전문대학원, 2중국 태주시 검찰청
+
+A Study of the Factors Influencing Acceptance of Virtual Currency:
+Focused on Technology Acceptance Model
+Seung Hwan Gu1*, Wang Ping1, Sun Tingting2
+1
+
+Department of Industrial & Information Systems Graduate School of Public Policy and Information
+Technology, Seoul National University of Science and Technology
+2
+
+Public Prosecutors' Office Taizhou City, China
+
+요 약 본 연구는 최근 화두로 떠오르고 있는 가상화폐의 특징에 대해 고찰하고, 도출된 가상화폐의 특징이 어떠한 과정을
+거쳐 소비자의 수용에 영향을 미치는지에 대해 살펴보았다. 이를 위해 기술수용모형을 사용하였으며, 구조방정식 분석을 통
+해 연구결과를 도출하였다. 연구결과, 신뢰성과 범용성은 유용성과 용이성에 유의한 영향을 미치는 것으로 나타났으며, 보안
+성은 영향을 미치지 않는 것으로 나타났다. 유용성은 태도와 만족에 직접적인 영향을 미치지는 않았으며, 용이성은 유용성과
+태도, 만족에 직접적인 영향을 미치고 있었다. 마지막으로 태도와 만족은 이용의도에 긍정적인 영향을 주는 것을 알 수 있었
+다. 본 연구결과를 통해 실무에서 가상화폐에 대한 효과적이고, 효율적인 전략을 입안할 수 있을 것이다.
+
+Abstract The purpose of this study was to explore the features of virtual currency, which has become a hot topic
+recently. The characteristics of virtual currency were examined in terms of the effect on consumer acceptance.
+Therefore, when using the accepted model of the technology, the derived results should be analyzed by SEM. The
+research results showed that versatility and reliability affect the ease of use and safety is not have an effect. The utility
+did not have a direct effect on the attitudes and satisfaction, and the ease of use directly affects the ease of use,
+attitude and satisfaction. Finally, satisfaction with the attitude had a positive impact on the time of use. Effective
+strategies to manage the effect of the virtual currency will be possible to formulate from the results of this study.
+
+Key Words : Technology Acceptance Model, Virtual Currency, Bitcoin, Acceptance
+
+1. 서론
+
+바탕으로 하는 대규모 투자와 관심이 요구된다. 화폐라
+는 개념은 특정 지역 또는 국가에서만 사용하는 지역적
+
+최근 비트코인의 열풍으로 인해 가상화폐에 대한 관
+
+개념이 아닌 국제적인 개념이 요구되는데, 그 이유는 지
+
+심과 논의가 증대되고 있다. 가상화폐는 이미 일반적으
+
+구촌화로 인해 지역을 불문하고 사용할 수 있어야하기
+
+로 사용되고 있는 전자화폐나 신용카드 등으로 우리에게
+
+때문이다. 즉, 화폐는 신용적인 성격을 가지고 있기 때문
+
+친숙하게 다가와 있다. 하지만 가상화폐는 기존 화폐의
+
+에 자신이 지불하는 화폐의 가치를 상대방도 동일하게
+
+보완재나 투자대안으로서 인식되고 사용되고 있을 뿐,
+
+인식하고 있어야 한다. 따라서 가상화폐는 이러한 기존
+
+실제 화폐를 대신할 수 있을지에 대해서는 의문이 제기
+
+화폐의 개념을 가지고 있어야 한다.
+
+되고 있는 실정이다. 가상화폐가 새로운 화폐로 인식되
+
+가상화폐 중 하나인 비트코인의 경우, 우리나라보다
+
+기 위해서는 인프라의 구축 및 사용자의 인식 개선 등을
+
+해외에서 더 민감하게 반응하고 있다. 그 이유는 만일 가
+
+*
+
+Corresponding Author : Seung Hwan Gu(Seoul National University of Science and Technology)
+Tel: +82-10-2955-5638 email: gsh999@hanmail.net
+Received March 4, 2014
+Revised April 10, 2014
+Accepted July 10, 2014
+
+4122
+
+가상화폐의 수용에 영향을 미치는 요인 연구: TAM을 중심으로
+
+상화폐의 사용이 쉽고 편리해질 경우 사용자의 증가로
+
+유통되었는데, 이는 금이 가진 한정성과 그에 대한 가치
+
+인해 세계의 기축통화까지 발전할 수 있으며, 이를 기반
+
+를 사회 통념적으로 모두가 인정하고 있었기 때문이라
+
+으로 한 관련 산업의 발전이 가능하기 때문이다. 비트코
+
+할 수 있다. 현재 사용되고 있는 은행권은 내재적 가치가
+
+인은 일반화폐와는 다르게 총 화폐량이 한정되어 있어
+
+거의 없는 종이지만 사람들은 해당 은행권을 상대방에게
+
+화폐에 대한 가치가 훼손되지 않는 장점이 있다. 이는 달
+
+주었을 때 그에 상응하는 가치를 얻을 수 있다고 믿기 때
+
+러화 이전 기축통화였던 금과 같은 역할을 한다고 볼 수
+
+문에 화폐로서의 가치를 가지고 있다. 즉, 화폐의 개념은
+
+있는데, 이와 같은 희소성과 유통성 때문에 사람들은 비
+
+지급에 대한 신뢰이자 약속이라 볼 수 있다.
+전자화폐는 이러한 화폐의 개념을 IC카드 또는 네트
+
+트코인을 비롯한 가상화폐가 통화수단으로 발전 할 수
+
+워크에 연결된 컴퓨터에 전자적 방법으로 저장하여 현금
+
+있을 것이라 기대하고 있다.
+가상화폐를 대상으로 하는 연구는 기술적인 측면과
+
+을 대신 사용되는 화폐이다. 화폐와 전자화폐의 차이점
+
+법적인 측면, 현황 및 시사점에 대한 연구가 주를 이루고
+
+은 화폐는 신용의 개념인데 반해, 전자화폐는 기존 화폐
+
+있으며, 특히 법적인 부분과 기술적인 부분에 대한 연구
+
+의 개념을 그대로 가지고 전자적인 수단을 사용하여 결
+
+들이 많이 진행되어왔다[1-3]. 그러나 이러한 논의들은
+
+제가 가능하게 만든 도구적인 성격이 강하다고 할 수 있
+
+가상화폐의 사용에 있어서 가능성을 타진하는 것에 대한
+
+겠다. 따라서 화폐는 엄밀하게 전자화폐와는 다른 성격
+
+이론적인 연구이기 때문에, 실제 사용자들이 어떠하게
+
+을 가진다고 할 수 있다. 지금까지 화폐의 특성에 대해
+
+받아들일지에 대한 실증적 연구가 필요하다. 가상화폐가
+
+정의한 연구를 살펴보면 화폐는 매우 다양한 의미를 내
+
+활성화되기 위해서는 가상화폐의 사용이 기존의 화폐처
+
+포하고 있으며, 크게 재화 및 용역에 대한 지불수단, 채무
+
+럼 사용이 쉽고 용이하도록 인프라가 구축되어 있어야
+
+이행의 수단, 가치저장의 수단 등으로 정의할 수 있다
+
+하며, 가치에 대해 동일하게 인지해야 한다. 또한 전자적
+
+[4,5].
+
+인 성격을 가진 만큼 보안성이 우수해야 할 것이다.
+
+전자화폐는 가치의 저장 및 이전이 용이하고 어디에
+
+본 연구는 가상화폐의 특징요인을 도출하고, 기술수용
+
+서나 사용할 수 있는 범용성을 가지고 있으며, 사용상의
+
+모형을 이용하여 가상화폐의 수용에 어떠한 요인이 영향
+
+익명성 보장 등 화폐로서의 주요 기능을 갖추고 있기 때
+
+을 미치는지 구조방정식을 활용하여 분석하는 것을 목적
+
+문에 현금거래의 상당부분을 대체하여 사용되고 있다.
+
+으로 한다. 본 연구에서는 실제 가상화폐가 법안을 통과
+
+전자화폐의 특징에 대한 선행연구로 Lee[6]는 유통성, 양
+
+하고, 기술적 보완이 완료되어 상용화되었을 경우를 가
+
+도가능성, 범용성, 익명성, 송금성, 수송비용 절감, 금액의
+
+정하여 실제 수용자들이 어떻게 가상화폐를 받아들이는
+
+통합 및 분할의 유연성, 전자성을 들었으며, Ha[18]는 전
+
+지에 대해 연구하여 실무적인 시사점을 주고자 한다.
+
+자상거래 결제에서 사용자의 수용의도에 영향을 미치는
+
+본 논문의 구성은 다음과 같다. 2장에서는 가상화폐의
+
+요인으로 편의성과 반응시간, 보안성, 경제성, 안전성, 저
+
+특징 및 기술수용모형에 대한 기존연구를 다룬다. 3장에
+
+항성을 들었다. 지금까지 화폐와 전자화폐에 대한 특징
+
+서는 연구 모형 및 변수 등 분석 자료에 대해 설명하고,
+
+의 공통 요인을 살펴보면 보안성과 범용성, 신뢰성의 개
+
+4장에서는 분석 결과를 제시한다. 5장에서는 본 연구 결
+
+념으로 요약할 수 있다.
+
+과에 대한 주요 시사점을 제시하고, 6장에서는 본 연구의
+
+2.2 가상화폐의 특징 및 수용요인
+
+기여도 및 한계와 향후 연구방향을 제시한다.
+
+가상화폐는 전자화폐의 일종으로 네트워크를 기반으
+로 한 전자화폐를 가리킨다. 가상화폐는 각국의 정부나
+
+2. 이론적 고찰
+
+중앙은행이 발행하는 일반 화폐와 달리 처음 고안한 사
+람이 정한 규칙에 따라 가치가 매겨지고, 실제 화폐와 교
+
+2.1 화폐 및 전자화폐의 특징
+
+환될 수 있다는 것을 전제로 유통된다[8]. 가상화폐는 화
+
+화폐란 상품이나 서비스를 교환하는데 있어서 지불의
+
+폐 발행에 따른 생산비용이 전혀 들지 않고 이체비용 등
+
+수단이나 가치를 대변하며 사회에 유통되는 금화ㆍ은화
+
+거래비용을 대폭 절감할 수 있는 장점을 가진다. 또 하드
+
+ㆍ동화ㆍ지폐 등을 말한다. 화폐는 본래 금을 가공하여
+
+디스크 등에 저장되기 때문에 보관비용이 들지 않고, 도
+4123
+
+한국산학기술학회논문지 제15권 제7호, 2014
+
+난ㆍ분실의 우려가 없기 때문에 가치저장수단으로서의
+
+비스, 가상화폐)을 수용하고 채택하는데 영향을 미치는
+
+기능도 뛰어나다. 그러나 거래의 비밀성 보장으로 인해
+
+변수로 외부 요인을 사용하며, 외부요인이 지각된 유용
+
+불법적인 곳에 악용될 수 있고, 과세에 어려움이 생겨 탈
+
+성(perceived usefulness)과 지각된 용이성(perceived
+
+세수단이 될 수도 있어 문제가 된다[8].
+
+ease of use)에 어떠한 영향을 미치는지 살펴본다. 지각
+
+현대경제연구원[9]은 가상화폐를 실제 화폐와의 교환
+
+된 유용성은 새로운 기술이나 시스템이 생활의 질을 높
+
+성에 따라 포인트형, 사이버머니형, 대안화폐형으로 분류
+
+여준다고 믿는 정도이며, 지각된 용이성은 새로운 기술
+
+하였다. 포인트형은 실제 화폐와 교환되지는 않으나 미
+
+과 시스템이 정신적, 신체적으로 많은 노력을 요구하지
+
+리 정해진 곳에서 재화와 서비스를 구매하는 데 사용되
+
+않을 것이라는 주관적인 믿음의 정도로 해석할 수 있다.
+
+는 것을 말하며, 신용카드 포인트, 주유소 마일리지 등이
+
+Davis는 이러한 지각된 유용성과 지각된 용이성 변수에
+
+이에 속한다. 사이버머니형은 실제 화폐로 가상화폐를
+
+의해 형성된 태도가 행동의도를 매개로 행동에 인과적
+
+구입할 수 있으나 가상화폐를 실제 화폐로 바꿀 수는 없
+
+관련성을 주는 것으로 설명한다[Fig. 1][16].
+
+는 경우를 말하며, 온라인 게임 등에서 사용되는 사이버
+머니가 이에 속한다. 마지막으로 대안화폐형은 실제 화
+폐와 자유로운 교환이 가능한 유형으로 ‘비트코인’이 대
+표적인 예라 할 수 있다.
+가상화폐는 향후 IT기술의 발전과 트렌드의 변화에
+따라 유형 간 융합과 다른 가상화폐 간 통합 등의 방법으
+
+[Fig. 1] Technical Acceptance Models
+
+로 꾸준히 진화할 것이며, 가상 화폐 생태계의 진화로 인
+한 신산업 창출, 거래비용 절감, 투자 확대 등 국가 경제
+
+기술수용모델의 타당성이 입증되면서 후속연구는 지
+
+활성화에 기여할 것이다. 또한 가상화폐의 환전 및 세금
+
+각된 유용성과 지각된 용이성에 영향을 미치는 외부변수
+
+에 대한 법ㆍ제도가 정비되어 거래의 안전성 및 투명성
+
+에 관심을 갖기 시작했는데[15], 외부변수를 변형하며 확
+
+이 높아져 현재의 부작용에 대한 우려는 점차 감소할 것
+으로 전망되기 때문에 투기성 문제가 해소되고 지급결제
+목적의 수요가 증가할 것으로 전망된다[9].
+가상화폐에 대한 국내 연구는 크게 현황에 대한 고찰
+[1,3,10], 법적인 문제 검토[2]로 구분할 수 있다. 국외연구
+를 살펴보면 기술적인 문제 및 해결[11]과 각 가상화폐에
+대한 특징분석[12-14] 등에 대한 연구가 주를 이루고 있
+어 국내는 아직 도입에 관한 연구가 진행 중이며, 해외에
+서는 이미 도입 그 이후에 대한 연구가 진행 중인 것을
+알 수 있다. 우리나라는 경제적으로 선진국에 종속되어
+
+장된 기술수용모델은 기존의 기술수용모델을 보완하여
+진화된 모형이라 할 수 있다.
+기술수용모델은 전자화폐의 수용에 관한 연구에서도
+많이 사용되어왔다. 가상화폐가 전자화폐의 일종임을 고
+려할 때 전자화폐의 수용에 대한 연구를 살펴보는 것은
+의미가 있다고 할 수 있을 것이다. Jeon[7]은 전자상거래
+결제에서 사용자의 수용의도에 영향을 미치는 요인을 살
+펴보기
+
+위해
+
+기술수용모형을
+
+사용하였으며,
+
+Ryu,
+
+Ryu[17]는 전자화폐에 대한 지각된 유용성이 이용의도
+
+있다고 할 수 있기 때문에 선진국에서 가상화폐를 도입
+할 경우 자동적으로 사용할 수밖에 없는 구조이다. 따라
+서 우리나라에서도 도입을 어찌할 지에 대한 연구를 벗
+어나 도입된 상황을 가정하고 어떻게 이를 활성화 시킬
+
+에 미치는 영향을 고찰하기 위해 기술수용모형을 활용하
+였다. 이외에도 다양한 분야에서 신기술이나 새로운 결
+제수단의 수용에 관한 연구에서 기술수용 모형이 사용되
+어 왔다[18-20].
+지금까지 살펴본 바와 같이 새로운 기술이나 결제수
+
+것인가에 대한 연구가 필요한 시점이라 할 수 있겠다.
+
+단의 수용을 파악하기 위한 방법으로 기술수용모형이 다
+수 사용되고 있기 때문에 새로운 대안 화폐로 부상 중인
+
+2.3 기술수용모형
+기술수용모형은 Davis et al.[15]에 의해 기술수용자의
+행위를 설명하고 예측하고자 만들어진 모델이다. 기술수
+용모형에서는 특정한 정보기술(예를 들어 최신기술, 서
+
+가상화폐에 대한 수용요인 분석에 기술수용 모델의 적용
+이 적절한 것으로 판단된다. 따라서 본 연구에서는 가상
+화폐의 수용에 영향을 미치는 요인을 분석하기 위하여
+기술수용모형을 사용하고자 한다.
+
+4124
+
+가상화폐의 수용에 영향을 미치는 요인 연구: TAM을 중심으로
+
+3.2 연구가설
+
+3. 연구 방법
+
+3.2.1 신뢰성에 관련된 가설
+
+3.1 연구 설계
+
+신뢰성은 화폐의 개념에서 가장 중요한 변수라 할 수
+
+3.1.1 연구모형
+
+있다. 화폐가 금화에서 종이화폐로 바뀌는 과정에 있어
+
+본 연구는 가상화폐의 수용을 살펴보기 위해 Fig. 2와
+
+서 신뢰성이 없었다면 불가능했을 것이다. 즉, 액수가 적
+
+같은 연구모형을 설정하였다. 본 연구모형은 확장된 기
+
+힌 종이화폐를 상대방에게 전해 줌으로 인해 그에 합당
+
+술수용모형을 사용하였으며, 외부 변인으로 신뢰성과 보
+
+한 가치를 돌려받을 수 없었다면 종이화폐는 존재하지
+
+안성, 범용성 요인을 사용하였다.
+
+못했을 것이다. 이는 자신이 가진 가상화폐를 제시했을
+
+3.1.2 변수의 조작적 정의
+
+기반이 되어야 함을 의미한다. 따라서 다음과 같은 가설
+
+본 연구에서는 화폐 및 전자화폐의 사용이나 만족에
+
+을 제시하였다.
+
+경우 상대방도 그에 상응하는 가치를 제공해주는 신뢰가
+
+영향을 주는 요인에 대한 연구와 기술수용모형을 사용한
+선행연구의 고찰을 토대로 Table 1과 같은 설문조사 항
+
+가설 H1 : 가상화폐의 신뢰성은 지각된 유용성에 정
+
+목을 제작하였다.
+
+(+)의 영향을 미칠 것이다.
+가설 H2 : 가상화폐의 신뢰성은 지각된 용이성에 정
+(+)의 영향을 미칠 것이다.
+3.2.2 보안성에 대한 가설
+
+보안성은 가상화폐가 전자적인 성격을 기반으로 하고
+있기 때문에 결코 간과할 수 없는 요인이라 할 수 있다.
+종이화폐나 신용카드의 경우에도 위폐나 복제 등으로 인
+[Fig. 2] Research Model
+
+한 보안문제가 발생하고 있으나, 오프라인 상거래로 인
+
+[Table 1] Set of measurement items and the operational definition of a variable
+Variables
+Reliability
+Security
+Generality
+
+Definition
+When proposed the money, the other party whether
+provide us with me the value in it
+Personal information that occurs when using virtual
+currency, security against leakage of transaction
+information
+By using the virtual currency, the contents of whether
+there is no restriction of time and space
+
+Perceived Usefulness
+
+Benefit of life obtained by using a virtual currency
+
+Perceived Ease of use
+
+Convenience of using a virtual currency
+
+Attitude
+
+Degree of recognition for the virtual currency change
+
+Satisfaction
+
+Fulfillment you feel for the virtual currency
+
+Use Intention
+
+Think about the use of virtual currency in the future
+
+4125
+
+-
+
+Measurement items
+Value the same as the original currency
+No disadvantage in use
+Transaction information security
+Security of personal information
+Payment security feature
+No constraints of time and space
+Portability
+Useful degree that obtained using
+Value degree that obtained using
+Improvement of viability
+Convenience of usage
+Easy of learning usage
+Convenience of application in a
+variety of situations
+Emotional attitude
+Convenience of learning
+Favorable attitude
+Expectations during use
+Satisfied with the result of payment
+Overall satisfaction
+Intention of future use
+Recommended to acquaintance
+Preferential means of payment
+
+REL1
+REL2
+SEC1
+SEC2
+SEC3
+GEN1
+GEN2
+USE1
+USE2
+USE3
+EAS1
+EAS2
+EAS3
+ATT1
+ATT2
+ATT3
+SAT1
+SAT2
+SAT3
+INT1
+INT2
+INT3
+
+한국산학기술학회논문지 제15권 제7호, 2014
+
+칠 것이다.
+
+해 확인이 어느 정도 가능하다. 가상화폐는 온라인 기반
+의 정보 유출 등 보안문제가 생기지 않도록 주의해야 할
+것이다. 최근 신용카드 정보유출 등으로 인해 보안문제
+
+3.2.5 지각된 유용성과 태도, 만족에 대한 가설
+
+가 이슈화됨에 따라 보안성은 사용자의 수용에 많은 영
+
+가상화폐로 인한 결제가 소비과정에 있어서 유용함을
+
+향을 미칠 것이라 사료된다. 하지만 과도한 보안상의 요
+
+가져온다면 사용자들은 용이성과 마찬가지로 가상화폐
+
+구는 용이성에 음(-)의 영향을 미칠 것이다. 따라서 다음
+
+에 대해 긍정적인 태도와 만족을 느끼게 될 것이다. 따라
+
+과 같은 가설을 제시하였다.
+
+서 다음과 같은 가설을 제시하였다.
+
+가설 H3 : 가상화폐의 보안성은 지각된 유용성에 정
+
+가설 H10 : 지각된 유용성은 태도에 정(+)의 영향을
+
+(+)의 영향을 미칠 것이다.
+
+미칠 것이다.
+
+가설 H4 : 가상화폐의 보안성은 지각된 용이성에 음
+
+가설 H11 : 지각된 유용성은 만족에 정(+)의 영향을
+
+(-)의 영향을 미칠 것이다.
+
+미칠 것이다.
+
+3.2.3 범용성에 대한 가설
+
+3.2.6 태도, 만족과 이용의도에 대한 가설
+
+아무리 좋은 기술이나 시스템이 등장해도 이를 사용
+
+예로부터 수용자의 긍정적인 태도와 만족은 이용의도
+
+할 수 있는 인프라가 구축되어 있지 않으면 효과가 크게
+
+에 긍정적인 영향을 미친다는 대다수의 연구결과가 존재
+
+반감될 것이다. 즉, 가상화폐가 높은 신용도와 보안성을
+
+한다[7,16]. 따라서 본 연구에서는 수용자의 태도와 만족
+
+가지고 있다 해도 이를 사용하는 것이 용이하지 않거나
+
+에 대해 다음과 같은 가설을 제시하였다.
+
+취급하는 곳이 적다면 가상화폐를 사용하는 사람은 매우
+적을 것이다. 따라서 범용성은 가상화폐의 수용에 영향
+
+가설 H12 : 태도는 만족에 정(+)의 영향을 미칠 것이
+
+을 미칠 것이라 판단되며, 다음과 같은 가설을 제시하였다.
+
+다.
+가설 H13 : 태도는 이용의도에 정(+)의 영향을 미칠
+
+가설 H5 : 가상화폐의 범용성은 지각된 유용성에 정
+
+것이다.
+
+(+)의 영향을 미칠 것이다.
+
+가설 H14 : 만족은 이용의도에 정(+)의 영향을 미칠
+것이다.
+
+가설 H6 : 가상화폐의 범용성은 지각된 용이성에 정
+(+)의 영향을 미칠 것이다.
+3.2.4 지각된 용이성과 지각된 유용성, 태도, 만
+
+4. 연구 결과
+
+족에 대한 가설
+
+4.1 조사대상자의 일반적인 특징
+
+지각된 용이성은 지각된 유용성에 영향을 준다. 새로
+운 기술이나 시스템의 사용이 용이하다면 유용성이 증가
+
+본 연구는 서울에 거주하며 전자화폐를 사용하고, 가
+
+할 것이며, 사용이 용이함으로 인해 생활의 질을 높여준
+
+상화폐에 대해 인지하고 있는 20대 - 40대를 대상으로
+
+다면 사람들은 해당 기술이나 시스템에 대해 긍정적인
+
+설문조사를 실시하였다. 본 조사에 앞서 40명의 표본을
+
+태도를 가지게 될 것이다. 또한 그에 따른 만족감도 상승
+
+대상으로 1차 예비조사를 실시하였으며, 난해한 문장과
+
+할 것이다. 따라서 다음과 같은 가설을 제시하였다.
+
+혼동될 수 있는 내용을 수정‧보완하였다. 본 조사는 2013
+년 12월 16일부터 2014년 1월 15일까지 한 달 간 실시하
+
+가설 H7 : 지각된 용이성은 지각된 유용성에 정(+)의
+
+였다. 총 400부의 설문지 배포하였으며, 응답이 부실한
+30부를 제외한 370부가 최종 분석에 사용되었다.
+
+영향을 미칠 것이다.
+
+설문응답자의 특징을 살펴보면, 남성과 여성이 비슷하
+
+가설 H8 : 지각된 용이성은 태도에 정(+)의 영향을 미
+
+게 나타났으며, 연령대도 20대 ～ 40대까지 다양하게 나
+
+칠 것이다.
+가설 H9 : 지각된 용이성은 만족에 정(+)의 영향을 미
+
+타났다. 직업은 61.4%가 사무직과 전문직이었으며, 학력
+
+4126
+
+가상화폐의 수용에 영향을 미치는 요인 연구: TAM을 중심으로
+
+은 73%의 응답자가 대졸로 나타났다. 월평균 수입은 200
+
+본 모형에서 표준화된 적재치는 모두 0.5이상으로 나타
+
+만원 ～ 400만원 이하가 45.1%로 가장 많았다. 빈도분석
+
+났고,
+
+의 결과를 살펴보면 본 조사대상자가 우리나라의 일반적
+
+Reliability)는 0.7이상으로 나타났으며, AVE(분산추출
+
+인 통계적 분포를 보이고 있음을 알 수 있었기 때문에 적
+
+값)은 0.5이상으로 나타나 집중타당성에 관련한 기준을
+
+절히 구성되어 있다고 할 수 있다. 응답자에 대한 세부적
+
+충족시키고 있어 모형의 적합성이 검증되었다[21].
+
+개별
+
+측정변수들의
+
+복합신뢰도(Composite
+
+인 특징은 Table 2에 제시하였다.
+[Table 3] Results of Confirmatory Factor Analysis
+[Table 2] General Characteristics of respondents
+
+Gender
+Age
+
+Academic
+ability
+
+Monthly
+income
+
+Job
+
+Divide
+Man
+Female
+20 - 29 years old
+30 - 39 years old
+40 - 49 years old
+High school graduate
+University graduates
+Graduate or more
+less than 1million won
+1million to 2million won
+2million to 3million won
+3million to 4million won
+4million to 5million won
+more than 5million won
+Self-employed
+Specialized job
+Office job
+Student
+Housewife
+etc.
+
+Total
+
+frequency
+194
+176
+113
+133
+124
+58
+270
+42
+25
+57
+90
+77
+48
+73
+24
+58
+169
+39
+41
+39
+370
+
+Factor
+REL1
+REL2
+SEC1
+Security
+SEC2
+SEC3
+GEN1
+Generality
+GEN2
+USE1
+Usefulness USE2
+USE3
+EAS1
+Ease of use EAS2
+EAS3
+ATT1
+ATT2
+Attitude
+ATT3
+SAT1
+Satisfaction SAT2
+SAT3
+INT1
+Use
+INT2
+Intention
+INT3
+
+%
+52.4
+47.6
+30.5
+35.9
+33.5
+15.7
+73.0
+11.4
+6.8
+15.4
+24.3
+20.8
+13.0
+19.7
+6.5
+15.7
+45.7
+10.5
+11.1
+10.5
+100
+
+Reliability
+
+Estimate
+.761
+.776
+.884
+.911
+.849
+.806
+.901
+.761
+.877
+.896
+.813
+.758
+.730
+.872
+.946
+.746
+.815
+.915
+.849
+.895
+.752
+.856
+
+S.E
+.407
+.573
+.368
+.283
+.459
+.291
+.580
+.662
+.382
+.290
+.489
+.595
+.670
+.451
+.185
+.864
+.434
+.212
+.398
+.353
+.843
+.412
+
+t
+14.072
+21.786
+22.737
+15.145
+18.027
+15.677
+15.170
+14.126
+23.980
+17.311
+20.134
+21.458
+12.669
+14.768
+
+C.R
+
+AVE
+
+.707
+
+.547
+
+.863
+
+.678
+
+.770
+
+.627
+
+.828
+
+.617
+
+.816
+
+.597
+
+.814
+
+.596
+
+.864
+
+.680
+
+.796
+
+.566
+
+  =445.026(df=178, p=0.000),   /df=2.0, RMSEA=0.064, GFI=0.901,
+AGFI=0.859, IFI=0.953, NFI=0.924, CFI=0.953
+
+4.2 타당성 검증 및 확인적 요인분석
+선행연구에 의하여 가상화폐의 특징 요인과 지각된
+
+4.3 모형적합도 및 가설 검정
+
+용이성 및 유용성, 태도, 만족, 이용의도 요인을 도출하였
+
+본 연구에서는 실증분석을 위해 구조방정식 모형을
+
+으나, 본 연구에 맞게 수정ㆍ보완되었기 때문에 측정항
+
+활용하였다. 연구 모형의 전체적인 구조모형을 검정한
+
+목의 타당성을 검증할 필요가 존재한다. 이를 위해
+AMOS 18.0을 활용하여 확인적 요인분석을 실시하였다.
+적합도는 선행연구[16]에 의거하여 RMSEA(Root mean
+square
+
+error
+
+of
+
+approximation)는
+
+결과,
+
+RMSEA=0.068,
+
+GFI=0.888,
+
+AGFI=0.849,
+
+IFI=0.943,
+
+NFI=0.913, CFI=0.943을 갖는 모형이 도출되었다. 본 모
+
+0.1이하,
+
+형은 GFI의 값이 기준에 조금 미달하지만 Kim[22]에 의
+
+GFI(goodness-of-fit-index), NFI(normed fit index),
+
+하면 GFI는 0.8에서 0.9사이의 값도 적당하게 사용될 수
+
+CFI(comparative fit index)는 0.9이상, AGFI(adjusted
+goodness-of-fit-index)는 0.8이상의 기준을 적용하였다.
+Table 3은 본 모형의 모형적합도 지수를 나타낸다. 적
+
+
+  =512.123 (df=188, p=0.000),   /df=2.724,
+
+있다고 하고 있으므로 구조분석의 일반적인 평가지표들
+과 비교해 볼 때 적절한 수준으로 판단되기에 모형은 적
+
+
+
+합한 것임을 알 수 있다. 본 연구에서 설정한 경로계수에
+
+합도 지수는  =445.026 (df=178, p=0.000),  /df=2.000,
+
+대한 결과는 Fig. 3에 표시하였으며, 구조모형 경로분석
+
+RMSEA=0.064,
+
+결과는 Table 4와 같다.
+
+GFI=0.901,
+
+AGFI=0.859,
+
+IFI=0.953,
+
+NFI=0.924, CFI=0.953으로 나타났으며, 표본크기에 민감
+
+
+한  값을 제외하고는 수용할만한 수준이라 할 수 있다.
+4127
+
+한국산학기술학회논문지 제15권 제7호, 2014
+
+각된 용이성은 태도(.624)와 만족(.371)에 모두 유의한 영
+
+[Table 4] Path Coefficient on Structural Model
+
+향을 미치는 것으로 나타났다. 용이성이 태도와 만족에
+
+Path
+Estimate
+S.E
+t
+p
+REL → USE
+.439
+.105
+4.329
+.000
+SEC → USE
+.118
+.070
+1.678
+.093
+GEN → USE
+.304
+.053
+5.294
+.000
+REL → EAS
+.172
+.077
+2.103
+.036
+SEC → EAS
+.022
+.046
+0.354
+.724
+GEN → EAS
+.296
+.042
+5.946
+.000
+EAS → USE
+.599
+.071
+7.695
+.000
+USE → ATT
+-.045
+.210
+-0.271
+.786
+EAS → ATT
+.133
+.237
+3.663
+.000
+USE → SAT
+.624
+.173
+0.845
+.398
+EAS → SAT
+.371
+.203
+2.197
+.028
+ATT → SAT
+.180
+.053
+2.95
+.003
+ATT → INT
+.375
+.054
+6.826
+.000
+SAT → INT
+.338
+.063
+6.142
+.000
+REL: Reliability, SEC: Security, GEN: Generality, USE:
+Usefulness, EAS: Ease of use, ATT: Attitude, SAT: Satisfaction,
+INT: Use Intention
+
+영향을 주는데 반해, 유용성이 영향을 주지 않는 이유는
+화폐의 특징상 아무리 유용하더라도 사용이 쉽지 않을
+경우 잘 사용하지 않는 사례가 반영된 결과라 사료된다.
+예를 들어 모바일 결제의 경우, 이미 상용화되어 있지만
+실제로 모바일결제를 사용하는 것보다 카드나 현금으로
+바로 지불하는 것이 쉽고 편하기 때문에 이를 자주 사용
+하지 않는 것과 같은 이치라 할 수 있다. 따라서 가상화
+폐를 소비자가 수용함에 있어서 다양한 기능으로 인한
+유용함을 제공하기 보다는 사용의 편리성 측면을 부각시
+켜야 한다.
+마지막으로 태도는 만족에 유의한 영향을 미치며
+(.180), 태도(.375)와 만족(.338)은 모두 이용의도에 유의
+한 영향을 미치는 것으로 나타났다. 이는 여러 선행연구
+결과와 비슷한 결과라 할 수 있다.
+본 가설 검증의 결과를 정리하면 다음과 같다. 가상화
+폐의 범용성과 신뢰성은 사용자에게 유용하고 용이하게
+받아들여지며, 용이성은 사용자의 태도와 만족에 영향을
+준다. 이러한 태도 변화와 만족도 증대는 이용의도에 영
+향을 미치기 때문에 향후 가상화폐를 상용화하기 위해서
+는 가상화폐의 신뢰성과 범용성 향상 방안을 우선적으로
+적용해야 할 것이다.
+
+[Fig. 3] Results of Research
+
+가설검정 결과를 살펴보면 다음과 같다. 가설1, 가설3,
+가설5는 가상화폐의 특징이 지각된 유용성에 유의한 영
+향을 미칠 것이라는 내용이다. 연구결과 신뢰성(.439)과
+범용성(.304)만이 지각된 유용성에 유의한 영향을 미치고
+있는 것으로 나타나 가설1, 가설5는 지지되었으며, 가설3
+은 기각되었다.
+
+5. 논의
+본 연구는 가상화폐의 수용에 영향을 미치는 요인을
+살펴보고자 외부변인으로 가상화폐의 특징인 보안성, 범
+용성, 신뢰성을 사용하고, 기술수용모형을 적용하여 구조
+방정식을 통해 검증하였다. 분석 결과를 통한 논의는 다
+음과 같다. 첫째, 신뢰성은 지각된 유용성과 지각된 용이
+
+가설2, 가설4, 가설6은 가상화폐의 특징이 지각된 용
+
+성에 유의한 영향을 미치는 것으로 나타났는데, 이는 가
+
+이성에 유의한 영향을 미칠 것이라는 내용이다. 연구결
+
+상화폐의 화폐적인 특징이 반영된 것이라 할 수 있다. 화
+
+과 신뢰성(.172)과 범용성(.296)만이 지각된 용이성에 유
+의한 영향을 미치고 있는 것으로 나타나 가설2과 가설6
+는 지지되었으며, 가설4은 기각되었다.
+
+폐의 경우 교환의 목적으로 사용되기 때문에 신뢰성이
+없으면 화폐로서의 가치가 전혀 없어지게 된다. 화폐유
+통의 기본 원칙은 서로간의 신뢰이기 때문에 화폐 본연
+
+가설7의 검증결과 지각된 용이성은 지각된 유용성에
+
+의 기능에 충실해야 할 것이다. 최근 가상화폐로 이슈가
+
+는 유의한 영향을 미치고 있는 것으로 나타났으며(.599),
+이는 기술수용 모형을 사용한 대부분의 연구결과와 일치
+하고 있다[18,20]. 지각된 유용성은 태도와 만족 모두에
+유의한 영향을 미치고 있지 않는 것으로 나타났으며, 지
+4128
+
+되었던 비트코인의 경우에는 화폐로서의 신뢰성에 대한
+측면보다는 투기성이 부각되어 유통에 실패함으로써 대
+안화폐로 발전하지 못했다. 향후 가상화폐의 신뢰성을
+
+가상화폐의 수용에 영향을 미치는 요인 연구: TAM을 중심으로
+
+6. 결 론
+
+더욱 사용자들에게 부각시킨다면 대안 화폐로서 사용도
+가능해 질 것으로 사료된다.
+둘째, 보안성은 유용성과 용이성 모두에 유의한 영향
+
+본 연구는 가상화폐의 특징을 도출하기 위해 기존의
+
+을 미치지 않는 것으로 나타났다. 이는 사용자들이 전자
+
+화폐 및 전자화폐 등의 특징을 고찰하였다. 이를 통해 가
+
+기기나 온라인을 기반으로 한 결제나 금전이 오고가는
+
+상화폐의 특징을 신뢰성, 보안성, 범용성의 3가지로 구분
+
+행위를 할 경우 보안을 위한 비밀번호 입력, 인증서 사용
+
+하였다. 이러한 가상화폐의 특징이 사용자의 수용에 어
+
+등으로 인한 사용의 용이성 저하가 각인되어 있기 때문
+
+떠한 영향을 주는지 분석하기 위해 기술수용모형을 이용
+
+이라 사료된다. 또한 최근 카드사의 개인정보 유출문제
+
+하여 구조방정식 분석방법을 통해 결과를 도출하였다.
+
+등으로 인해 자신의 개인정보가 모두 노출되어 있다고
+
+연구 결과, 신뢰성과 범용성은 유용성과 용이성에 유
+
+생각하고 있기 때문으로 사료된다. 따라서 향후 가상화
+
+의한 영향을 미치는 것으로 나타났으며, 보안성은 유용
+
+폐를 상용화할 경우 보안을 강화하되 사용상 불편함이
+
+성과 용이성 모두 유의한 영향을 미치지 않는 것으로 나
+
+발생하지 않도록 해야 할 것이다.
+
+타났다. 용이성은 유용성에 영향을 미치나 유용성은 태
+
+셋째, 범용성은 지각된 유용성과 지각된 용이성에 유
+
+도나 만족에 직접적인 영향을 미치지는 않았으며, 용이
+
+의한 영향을 주고 있는데, 이는 신뢰성의 결과와 마찬가
+
+성은 태도와 만족에 직접적인 영향을 미치고 있었다. 마
+
+지로 화폐적인 특징이 고려되기 때문으로 사료된다. 즉,
+
+지막으로 태도와 만족은 이용의도에 긍정적인 영향을 주
+
+화폐는 언제 어디서나 쉽고 간편하게 사용되어져야 할
+
+는 것을 알 수 있었다.
+본 연구의 의의는 학문적 의의와 실증적 의의로 나눌
+
+것이며, 향후 가상화폐를 활성화하기 위해서는 가맹점의
+
+수 있다. 먼저, 학문적 의의는 기존에 기술적으로만 논의
+
+확대 및 인프라 구축 등이 선결되어야 함을 의미한다.
+넷째, 지각된 용이성은 지각된 유용성에 유의한 영향
+
+되었던 가상화폐에 관한 연구에서 사회과학적인 측면에
+
+을 미치는 것으로 나타났다. 하지만 지각된 유용성은 태
+
+서 접근하여 사용자들의 수용 요인에 대한 분석을 실시
+
+도와 만족에 직접적으로 영향을 주지는 않는 것을 알 수
+
+하였다 점이다. 또한 기존의 연구가 단순히 기술수용모
+
+있었다. 이는 사용자가 아무리 유용하다고 판단하여도
+
+델을 사용한 연구였다면, 이에서 한걸음 나아가 기술수
+
+사용이 쉽고 편하지 않을 경우 즉각적인 태도 변화나 만
+
+용 모형을 확장하여 외부변인으로 가상화폐의 특징을 사
+
+족을 이끌어내기가 어려움을 나타낸다. 앞서 설명했듯이
+
+용하고 구조방정식 분석을 통해 결과를 도출했다는 데
+
+휴대전화를 사용한 결제의 경우 모두가 그 유용함에 대
+
+있다. 다음으로 실증적 의의는 실제 현업에서 정책입안
+
+해서는 인지하고 있지만 결제의 불편함 때문에 이를 사
+
+자나 기획자들이 실질적으로 가상화폐의 보급을 위한 정
+
+용하는 빈도가 거의 없는 경우를 대변한다고 할 수 있다.
+
+책이나 전략을 수립함에 있어서 어떠한 부분을 중점적으
+
+반면, 지각된 용이성은 태도와 만족에 직접적인 영향을
+
+로 살펴보아야 하는가를 실증적으로 제시했다는 점이다.
+
+주고 있다. 따라서 향후 가상화폐의 전면시행을 고려할
+
+전략 입안자들은 가상화폐에 대한 사용자의 니즈를 정확
+
+시 이러한 사용의 용이성을 우선적으로 고려해야 할 것
+
+히 파악하여 효과적이고, 효율적인 전략을 입안해야 할
+
+이다.
+
+것이다.
+
+마지막으로 태도와 만족은 이용의도에 유의한 영향을
+
+본 연구 결과는 가상화폐를 상용화하기 위한 전반적
+
+미치는 것으로 나타났는데, 이는 대부분의 선행연구와
+
+인 시사점을 제공하고 있으나 다음과 같은 한계점이 존
+
+일치하는 결과라 할 수 있다[17,19]. 즉, 사용자가 해당 화
+
+재한다. 먼저, 표본의 대표성 문제이다. 설문조사를 통한
+
+폐에 대한 태도가 긍정적이거나 만족하게 되면 당연히
+
+자료수집과정에서 표본을 370명으로 한정하였기에 이를
+
+결제 시 가상화폐를 사용하게 될 확률이 높아진다는 것
+
+전 국민적으로 일반화시키기에는 다소 무리가 있다는 점
+
+이다. 이는 신용카드가 기존의 화폐를 대체하고 있는 것
+
+이다. 또한 외부변인을 고려함에 있어서 화폐적인 측면
+
+과 비슷한 이치라 할 수 있다. 따라서 가상화폐를 확산시
+
+만을 고려하였다는 점이다. 향후 개인의 혁신성향, 사회
+
+키고 사용자에게 수용시키기 위해서는 가상화폐에 대한
+
+적 분위기 등을 반영하여 보다 다양한 변인을 고려한다
+
+태도나 만족도를 향상시킬 수 있는 방안을 모색해야 할
+
+면 보다 발전된 결과가 도출될 것이라 사료된다.
+
+것이다.
+
+4129
+
+한국산학기술학회논문지 제15권 제7호, 2014
+
+References
+
+and User Acceptance of Information Technology”, MIS
+Quarterly, Vol.13, No.3, pp.318-339, 1989.
+DOI: http://dx.doi.org/10.2307/249008
+
+[1] Korea Institute of Finance, “Corresponding regulatory
+authorities in the United States and diffusion of bit coin
+
+[16] S.H.Gu, D.W.Kim, C.M.Park, K.H.Kim, “Influence of LTE
+
+use: international financial problems”, Weekly Financial
+
+Characteristic and Personal Innovativeness on LTE Smart
+
+Brief, Vol.22, No.21, 16-17, 2013.
+
+Phone Acceptance”, Journal of Digital Contents Society,
+Vol.14, No.3, pp.291-301, 2013.
+
+[2] H.K.Lee, “A Study on the Legal Problems of Virtual World
+
+DOI: http://dx.doi.org/10.9728/dcs.2013.14.3.291
+
+in Japan”, Journal of Korea Payment and Settlement,
+
+[17] J.C.Ryu, C.H.Ryu, “An Empirical Study on Effects of
+
+Vol.5, No.1, pp.115-134, 2011.
+
+Perceived Usefulness on the Behavioral Intention to Use
+
+[3] T.O.Kim, “Around the Linden Dollar and Bitcoin: point and
+Information
+
+Electronic Money: The Moderating Effect of Type of
+
+technology and payment settlement, Vol.53, pp.33-64,
+
+Electronic Shopping Malls”, Journal of the Korean
+
+2013.
+
+Production and Operations Management Society, Vol.15,
+
+suggest
+
+usage
+
+of
+
+virtual
+
+currency”,
+
+No.3, pp.95-117, 2005.
+
+[4] M.N.Lee, Monetary financial theory, HyengSeolSa, 2006.
+[5] G.O.Jeong, “A Study on Activation Methods of Korea
+
+[18] S.Y.Jeon, K.S.Ha, “Factors of the Acceptance Affecting
+
+e-Cash and Mobile Banking”, Journal of Korea Payment
+
+the e-Payment System: Focusing on service quality and
+social influence”, Journal of Korea Academia-Industrial
+
+and Settlement, Vol.2, No.2, pp.67-97, 2008.
+
+cooperation Society, Vol.11, No.9, pp.3239-3248, 2010.
+
+[6] C.S.Lee, “A Study on the Payment Systems for Electronic
+Money
+
+in
+
+Japan”,
+
+International
+
+Commerce
+
+DOI: http://dx.doi.org/10.5762/KAIS.2010.11.9.3239
+
+and
+
+[19] K.Y.Lee, “Factors Influencing the Usage of the Mobile
+
+Information Review, Vol.3, No.2, pp.113-129, 2001.
+[7] S.Y.Jeon, “A Study of the Influence Factors to Acceptance
+
+Payment System: Focused Payment Authentication
+
+Intention of the e-Payment in Electronic Commerce:
+
+System by Hand held Phone”, Journal of Business
+Research, Vol.20, No.4, pp.93-119, 2005.
+
+Focusing on Service Quality and Social Influence”, PhD
+
+[20] S.Y.Kim, S.H.Lee, H.S.Hwang, “A Study of the Factors
+
+thesis, Ho-Seo University, 2011.
+[8] Naver Encyclopedia, http://terms.naver.com/entry.nhn?
+
+Affecting User Acceptance of Smart TVs”, Journal of
+
+docId=1968137&cid=515&categoryId=1164, (accessed
+
+Korea Academia-Industrial cooperation Society, Vol.14,
+No.4, pp.1652-1662, 2013.
+
+January, 28, 2014).
+
+DOI: http://dx.doi.org/10.5762/KAIS.2013.14.4.1652
+
+[9] Hyundai Research Institute, Current Situation and the
+
+[21] S.H.Lee, D.T.Kim, “The Effects of Ubiquitous Attributes
+
+Forecast of the Virtual Currency, Vol. 14, No.12, 2014.
+[10] Korea Institute of Finance, “Trend of major research of
+
+of Mobile Contents on Consumer Acceptance”, Journal of
+
+China Inside China: The brakes the ‘bit coin’ boom,
+
+DAEHAN Business, Vol.19, No.2, pp.651-678, 2006.
+
+China”, Weekly Financial Brief, Vol.22, No.50, 26-27, 2013.
+
+[22] K.S.Kim, AMOS 18.0 Structural equation modeling
+analysis, HannaraeAcademy, 2010.
+
+[11] Nakamoto, S., Bitcoin: A peer-to-peer electronic cash
+system. Consulted, 1, 2008.
+[12] Reid, F., Harrigan, M., “An analysis of anonymity in the
+bitcoin system. In Privacy”, security, risk and trust
+(passat), 2011 IEEE third international conference on and
+2011 IEEE third international conference on social
+computing (socialcom), pp. 1318-1326, 2011.
+DOI: http://dx.doi.org/10.1109/PASSAT/SocialCom.2011.79
+[13] Miers, I., Garman, C., Green, M., Rubin, A. D., “Zerocoin:
+Anonymous distributed e-cash from bitcoin” In Security
+and Privacy (SP), 2013 IEEE Symposium on, pp.
+397-411, 2013.
+DOI: http://dx.doi.org/10.1109/SP.2013.34
+[14] Grinberg, R., Bitcoin: an innovative alternative digital
+
+구 승 환(Seung-Hwan Gu)
+
+[정회원]
+
+•2010년 2월 : 서울과학기술대학교
+IT정책전문대학원 산업정보시스템
+전공 (공학석사)
+•2013년 8월 : 서울과학기술대학교
+IT정책전문대학원 산업정보시스템
+전공 (박사수료)
+•2013년 7월 ～ 현재 : 한국산업기
+술진흥원 연구원
+<관심분야>
+금융공학, 제약이론(TOC), Value Design, Service Science
+
+currency, 2012.
+[15] Davis, F., “Perceived Usefulness, Perceived Ease of Use,
+
+4130
+
+가상화폐의 수용에 영향을 미치는 요인 연구: TAM을 중심으로
+
+왕 핑(Wang Ping)
+
+[정회원]
+•2011년 2월 : 건국대학교 인터넷미
+디어학과 (공학사)
+•2013년 7월 ～ 현재 : 서울과학기
+술대학교 IT정책전문대학원 산업정
+보시스템전공 (석박통합과정)
+
+<관심분야>
+투자공학, ERP
+
+선 팅 팅(Sun Tingting)
+
+[정회원]
+
+•2003년 6월 : ZheJiang Gongshang
+University 법학과(학사)
+•2013년 12월 : ZheJiang University
+Guanhua Law School(석사)
+
+<관심분야>
+사회학, 법학
+
+4131
+
+

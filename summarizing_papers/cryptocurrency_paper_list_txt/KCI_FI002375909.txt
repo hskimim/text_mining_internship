@@ -1,0 +1,1445 @@
+Journal of the Korea Academia-Industrial
+cooperation Society
+Vol. 19, No. 8 pp. 137-145, 2018
+
+https://doi.org/10.5762/KAIS.2018.19.8.137
+ISSN 1975-4701 / eISSN 2288-4688
+
+20대 청년세대의 가상화폐에 대한 주관성 연구
+이영선1, 김수연2*, 김혜지2, 김한나2
+1
+
+조선대학교 행정복지학부, 2조선대학교 대학원 사회복지학과
+
+A Subjective Study on the Virtual Currency of the 20's Young
+Generation
+Young-Sun Rhee1, Su-Yeon Kim2*, Hye-Ji Kim2, Han-Na Kim2
+1
+
+Division of Administration & Social Welfare, Chosun University
+2
+
+Division of Information Social Welfare, Chosun University
+
+요 약 우리나라는 가상화폐 전 세계 거래량의 10~30%의 비중을 차지할 정도로 가상화폐 열풍이 뜨거우며, 특히 상대적으
+로 금융투자 경험이 적고, 소득이 불안정한 20대의 가상화폐 구매 경험은 전 연령대 중 가장 높다. 본 연구는 Q방법론을
+활용하여 20대 청년 세대의 가상화폐에 대한 주관적 인식을 유형화하고 각 유형의 특성을 분석하고자 하였다. Q모집단은
+인터넷 검색, 심층면접, 문헌검토를 통해 총 337개의 표본을 도출하였고, 최종 51개의 Q진술문을 선정하여 대학생을 포함한
+20대 40명의 P표본을 구성하여 Q-분류를 실시하였다. 분석은 PC-QUANL Program을 이용하여 분석하였다. 분석결과, 각 유
+형간의 의미 있는 차이를 발견하였으며, 각 유형은 ‘투자수단’, ‘미래기술’, ‘도박 같은 놀이의 일종’, ‘거품 같은 일시적 유행’
+의 4개의 유형으로 분류하여 명명하였다. 가상화폐에 대한 사회적 관심이 큰 지금의 상황에서 사회구성원들 간의 인식 차이
+는 사회적 갈등과 논란의 여지가 될 수 있다. 본 연구결과가 후속연구를 비롯한 사회적 논의의 근거자료로 기여할 수 있기를
+기대한다.
+
+Abstract In this study, we categorized the subjective recognition of 20's young generation about virtual currency into
+a few meaningful types and analyzed the characteristics of each type using the Qmethodology. For the Qpopulation,
+we selected a total of 337 samples which were derived from the Internet search, in-depth interviews, and literature
+survey, chose the final 51 Qstatements, and performed the Q-classification for the 40 P samples of 20’s, including
+university students. Then, we analyzed the results using the PC-QUANL program. From the analysis, we found
+meaningful differences between each recognition type, and, after classifying the recognition types into four, we named
+each of them as 'investment-vehicle' type, 'future-technology' type, 'kind of gambling-like plays' type, and 'foamy
+faddishness' type. We hope that this research result can contribute to follow-up research and social discussion as base
+materials.
+
+Keywords : Q methodology, Recognition type, Subjective study, 20's young generation, Virtual currency
+
+1. 서론
+
+환이 되는 디지털 가치의 척도이다[1]. 기존의 전자상거
+래에서 쓰였던 판매자-금융기관-구매자 간의 거래가 아
+
+가상화폐는 중앙정부나 공공기관에 의해 발행되거나
+
+니라 판매자와 구매자가 직접적으로 거래하기 위해 사용
+
+여타의 법화에 기반을 두지 않았으나 사용자에 의해 지
+
+되는 P2P(Peer-to-Peer)방식의 인터넷 화폐로, 최초의 가
+
+불수단으로 통용되며 전자적으로 이전, 저장, 그리고 교
+
+상화폐는 비트코인을 들 수 있다[2].
+
+본 논문은 2018 조선대학교 학술연구비 지원을 받아 수행되었음.
+*
+Corresponding Author : Su-Yeon Kim(Chosun Univ.)
+Tel: +82-10-8667-9682 email: sooyoun3230@hanmail.net
+Received May 14, 2018
+Revised (1st June 7, 2018, 2nd June 7, 2018, 3rd July 7, 2018)
+Accepted August 3, 2018
+Published August 31, 2018
+
+137
+
+한국산학기술학회논문지 제19권 제8호, 2018
+
+우리나라는 2013년 인천의 한 빵집에서 비트코인 결
+
+한 연구가 주를 이루고 있다. 그러나 청년 취업률의 심각
+
+제가 시작되었고[3], 2018년 현재 국내에서 가상화폐로
+
+한 감소 등 청년세대들의 경제적 문제와 더불어 투기열
+
+결제가 가능한 매장은 인터넷 매장을 포함하여 총 162
+
+풍의 확산은 20대 청년의 자살 등 여러 사회적인 이슈와
+
+곳이며, 실제 사용할 수 있는 곳은 3분의 2정도이다[4].
+
+문제의 발생에도 불구하고 가상화폐로 인한 사회적 문제
+
+그럼에도 불구하고 전 세계 가상통화 거래에서 10~30%
+
+를 다루거나 이에 대한 활용방안을 제시한 연구는 전무
+
+비중을 차지할 만큼 거래량이 매우 높은 편이며[5], 특히
+
+하다.
+
+2018년 가상화폐 연령대별 구매경험 조사에 따르면 20
+
+가상화폐가 새로운 화폐로 인식되기 위해서는 사용자
+
+대가 전체의 22.7%(30대 19,4%, 50대 8.2%, 60대
+
+의 인식 개선 등을 바탕으로 하는 투자와 관심이 요구되
+
+10.5%)로 가장 높은 것으로 나타났다[6].
+
+며 이에 실제 사회 구성원들이 가상화폐를 어떻게 인식
+
+용돈이나 아르바이트로 번 돈을 가상화폐에 투자하는
+
+하는지에 대한 실증 연구가 필요할 것으로 보인다.
+
+사례부터　대학 동아리로 가상화폐 자체를 연구하는 모
+
+따라서 재무지식이 중장년층보다 상대적으로 부족한
+
+임까지 생겨났다[7]. 이는 가상화폐 자체의 발전 가능성
+
+20대 청년세대를 대상으로 투자에 대한 경험과 가상 화
+
+에 주목한 경우도 있지만 24시간 거래가 지속되고, 짧은
+
+폐에 대한 가치를 반영할 수 있는 주관적 인식 유형을
+
+기간에 등락의 변화가 일어나 모니터에 눈을 떼지 못하
+
+파악하는 것은 의미 있다 여겨지며, 이에 본 연구에서는
+
+고 빠져드는 사람이 생기는 등 중독 연관성이 제기되기
+
+가상화폐에 대한 연구대상자들의 인식이나 태도가 잘 드
+
+도 한다. 또한 가상화폐 투자실패로 인한 20대의 자살사
+
+러날 수 있는 Q방법론을 활용하여 20대 청년세대들의
+
+건 등이 보도되면서[8] 찬성, 반대, 규제, 옹호 등의 논란
+
+가상화폐에 대한 인식 유형을 탐색하고, 유형별 특성을
+
+이 계속되고 있다. 특히 대다수의 20대는 금융투자 경험
+
+분석하고자 한다.
+
+이 적고 소득이 불확실해 투자실패를 감당 할 여력이 상
+대적으로 부족함에도 불구하고[9] 가상화폐 투자자들이
+
+2. 연구방법
+
+정보를 공유하는 각종 온라인 커뮤니티에는 대학생들의
+신규 가입이 끊이지 않고 있고, 커뮤니티 내에서 투자를
+독려하는 내용은 물론 자살을 암시하는 말들이 아무런
+
+2.1 Q방법론 활용의 타당성
+
+거리낌 없이 오가고 있어 심각한 사회문제로 비화될 수
+
+Q방법론은 연구주제에 대한 태도나 견해를 연구자가
+
+있음을 보여주고 있다. 그 결과 2018년 1월 8일 금융 감
+
+아닌 응답자의 관점에서 자신의 의견과 일치하는 카드의
+
+독원은 국내 가상통화 거래량의 급증으로 인한 시장과열
+
+진술 내용을 분류함으로써 자신의 의견을 조작적으로 규
+
+현상으로 가상통화 이용자들의 피해를 우려, 투자자의
+
+정하는 방법으로 다른 양적 연구방법에서 측정하기 어려
+
+보호를 위해 가상화폐의 위험성과 가상화폐에 투자 시
+
+운 내면적인 의식이나 사고의 유형을 알아내는 데 유용
+
+유의사항에 대해 발표하기도 하였다[10]. Whitley(1999)
+
+하다[17]. Q방법론에서 가장 중요한 것은 조사에 사용될
+
+등은 경제적 결핍으로 인한 필요한 자원을 얻지 못할 때
+
+진술문을 구성하는 것으로 체계적이고 조직적으로 구성
+
+오는 심리적 압박감은 자살 위험을 높이는 원인이 된다
+
+된 진술문은 연구주제에 대한 연구대상자들의 인식이나
+
+고 하였으며[11]. Horwood(2000)등은 초기 성인기 동안
+
+태도가 잘 드러나게 한다. 따라서 본 연구에서는 20대
+
+스트레스 생​
+활 사건에 노출이 많을수록 정신건강상의 문
+
+청년세대의 가상화폐에 대한 인식유형별 특성을 심층적
+
+제를 일으키는 위험요인이 될 수 있으며[12], 우울, 절망
+
+으로 파악하고 분석하기 위해 Q방법론을 적용하였다.
+
+등의 부정적 정서는 자살행동에 영향을 줄 수 있다고 설
+
+2.2 연구 설계
+
+명하였다[13].
+가상화폐와 관련한 선행연구를 살펴보면, 블록체인
+
+2.2.1 Q모집단과 Q표본의 구성
+
+기반 제4차 산업의 전망에 대한 연구가 대부분으로 특히
+
+Q모집단 추출을 위해 인터넷 검색, 심층면접, 문헌검
+
+가상화폐의 핵심기술인 불록체인의 기술동향과 시사점,
+
+토를 병행하였다. 인터넷 검색은 4명의 연구자가 카페,
+
+가상화폐의 규제, 법적 쟁점에 대한 연구[14-16] 등으로,
+
+뉴스, 블로그 등의 글과 댓글을 중심으로 Q진술문을 추
+
+주로 기술적인 측면과 법적인 측면, 현황 및 시사점에 관
+
+출하였고, 심층 면접은 가상화폐에 관심이 있는 20대 대
+138
+
+20대 청년세대의 가상화폐에 대한 주관성 연구
+
+학생 3명과 관심이 없고 정보를 잘 알지 못하는 20대 대
+
+상화폐의 인식에 대해 총337개의 Q모집을 추출하였다.
+
+학생 2명으로 실시하였으며 내용은 모두 녹취하였다. 질
+
+구축된 진술문 중에서 Q방법론 연구 경험이 있는 교수
+
+문의 내용은 ‘가상화폐에 대한 당신의 생각은 어떠하십
+
+와 동료에게 자문을 구하고, 각각의 진술문이 범주화의
+
+니까?’를 중심으로 가상화폐에 대한 정책이나 제도 등에
+
+주제와 내용으로 타당한지의 여부를 4명의 연구원들이
+
+대한 의견도 포함하도록 하였다. 준비된 질문 외에도 면
+
+재확인하는 과정을 거쳤다. 이후 긍정, 부정, 중립으로
+
+접 과정에서 보여주는 반응에 추가적인 질문을 하여 창
+
+균형을 이루도록 조정하여[18] 주제에 관한 대표성이 가
+
+의적이고 주관적인 의견이 나올 수 있도록 하였다. 마지
+
+장 크다고 생각하는 진술 51개를 Q표본으로 최종 확정
+
+막으로 가상화폐의 정부정책과 선행연구를 참고하여 가
+
+했다[Table 1].
+
+Table 1. Q statements and Z value of each recognition type satisfying Z≧±1.00
+NO
+
+Q-Statements
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+
+It is to invest in the future as if we invest in good companies.
+Virtual currency will be accepted as money, even if it takes time.
+If you can keep waiting, you can make money with virtual currency
+I would have bought virtual currency if I knew it earlier.
+A person who did not invest in virtual currency is a 'stupid idiot who lost a chance'.
+Negative opinions are from those who do not know virtual currency.
+The world becomes very convenient if virtual currency is commercialized,
+In order to develop new technologies such as virtual currency, side effects must be taken.
+I am jealous when I hear that people around me made money with virtual currency.
+It is not right to ignore the new phenomenon about money and value.
+Those who deal with virtual currency are pathetic.
+Virtual currency is just a speculative toy.
+If the government does not regulate virtual currency, it is regarded as the delinquency of duties.
+Virtual currency is a bubble hidden by an invisible imagination.
+Virtual currency is an addiction.
+The security credit of virtual currency is F.
+Virtual currency has an overly advertised aspect in terms of anonymity and efficiency.
+Virtual currency causes relative deprivation.
+It is a very serious issue that the exchange encourages irrational investment in virtual currency.
+If you make big money with virtual currency, it will be difficult for you to get out.
+Virtual currency reduces the work concentration of workers.
+We can only expect a serious drop of the virtual currencies.
+Quitting investing in virtual currency will be harder than quitting smoking.
+Virtual currency has no reality. Thus, it is different from the investments such as land, stocks, and gold.
+Virtual currency is no different from "Sea story".
+Virtual currency is a wicked substance that will deepen the harmful effect of capitalism
+Virtual currency causes Korean people to have excessive obsession with 'money'.
+The speculative frenzy of virtual currency is excessive.
+Virtual currency is just like the cyworld acorn.
+Virtual currency is a valuable future technology, but it should be done in the future.
+The interests of majority focus on 'Can I make money if I invest now?'
+Virtual currency seems to have faded the meaning of labor.
+I have no interest in virtual currency.
+I don't know about virtual currency.
+I'm tired of seeing an article about virtual currency now.
+Virtual currency collapse and surge are irrelevant to the government.
+Government regulation of virtual currency is rather an opportunity
+Income from virtual currency must be taxed.
+The virtual currency collapse is due to President Moon Jae-in.
+Virtual currency needs some control.
+If the government closes the exchange, it is the worst way of solving the problem.
+We should not bury new revolutionary technologies to calm bubbles and speculation
+Although virtual currency is good, it has to disappear in Korea.
+No country falls into virtual currency like Korea.
+We fall into virtual currency as jobs are unclear.
+A person who is adaptive to change will not deny virtual currency
+If the investment object of virtual currency is gone, we may look for other dangerous 'investment objects'
+such as lotteries and casinos.
+Relatively, college students do not reserve enough power to cope with investment failure due to little
+financial investment experience and uncertain incomes.
+People have to invest all their time, not just money only.
+People who earned money with virtual currency investment must be aware of that it was not from their
+ability but their luck.
+Saving through labor is a shortcut to success in life.
+
+47
+48
+49
+50
+51
+
+139
+
+Type
+Ⅰ
+
+Type
+Ⅱ
+2.04
+1.61
+
+2.03
+-1.03
+
+1.41
+
+1.80
+-1.30
+
+1.73
+
+1.92
+1,11
+1.21
+1.37
+-2.00
+
+-1.56
+-2.00
+
+Type Type
+Ⅲ
+Ⅳ
+-1.94
+-1.44
+-2.23
+-1.29
+-2.83 -1.81
+-1.22 -1.86
+-1.36
+-1.32
+1.07
+1.23
+-1.65 1.69
+1.60
+1.21
+-1.05
+
+1.87
+1.31
+-1.13
+
+1.12
+1.15
+-1.64
+
+1.57
+1.55
+
+-1.23
+1.47
+
+1.28
+2.00
+
+1.05
+
+-1.14
+2.25
+
+-1.03
+1.13
+
+-1.38
+
+1.28 1.17
+-1.03
+1.51
+
+-1.66
+-1.22
+-1.64
+1.34
+-1.34
+
+-1.86 -1.54
+1.46
+1.13
+1.24
+-1.27
+
+-1,08
+
+1.19
+
+1.82
+1.74
+-1.07
+
+한국산학기술학회논문지 제19권 제8호, 2018
+
+2.2.2 P표본 선정
+
+각 유형에서 인자 가중치가 가장 높은 전형적인 사람의
+
+P표본은 대학생을 포함한 20대 청년 40명으로 선정
+
+면접조사 내용을 합하여 내용을 분석하고 각 유형을 명
+
+하였다. Q-sorting 후 연령, 성별, 전공, 직업, 주식투자
+
+명하였다.
+
+및 대출 경험 여부와 평소 재테크 여부 등 일반적 특성
+을 고려하여 개별면담을 실시하였다. 연구대상자에게 연
+
+3. 연구결과
+
+구 목적 및 익명성 보장에 대한 내용을 설명하고 서면으
+로 동의를 받았으며 설문응답에 대한 충실성을 고려하여
+
+3.1 유형분석
+
+대상자에게 소정의 답례품을 제공하였다.
+
+본 연구 결과 20대 청년세대의 가상화폐에 대한 인식
+2.2.3 Q 표본 분류(Q-sorting)
+
+유형은 총 4가지 유형으로 전체 약 41% 설명력을 가진
+
+본 연구는 2월～3월에 약 4주간에 걸쳐 Q 표본분류
+
+다[Table 2].
+
+가 행해졌다. Q표본으로 선정된 진술문 카드를 읽은 후
+긍정(+), 중립(0), 부정(-)의 3개 그룹으로 분류하고 진술
+
+Table 2. Eigen value
+
+문 중 가장 긍정적인 의견이나 부정적인 의견의 진술문
+카드를 골라 바깥에서부터 안쪽으로 분류를 진행하고 중
+립부분에서 마무리하도록 하였다. 더 심층적인 분석을
+위해 배열이 완전히 끝난 후에는 P표본에서 가장 부정
+
+TypeⅠ
+
+TypeⅡ
+
+Type Ⅲ
+
+Eigen values
+
+9.5179
+
+4.4069
+
+2.6091
+
+Variance
+
+.2379
+
+.1102
+
+.0652
+
+Cumulative
+
+.2379
+
+.3481
+
+.4133
+
+또는 긍정하는 각 2개의 진술문을 선택 주관적 이유에
+대해 추가적으로 질문하였다[Fig.1].
+
+유형간의 상관계수는 .152 ～.446 이었으며, 제 2유형
+과 제4유형의 상관계수는 -.416으로 나타났는데, 이는
+
+Item
+
+2
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+6
+
+5
+
+4
+
+3
+
+2
+
+2
+
+point
+
+-6
+
+-5
+
+-4
+
+-3
+
+-2
+
+-1
+
+0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+제 2유형에 적재된 Q소트 중 47%가 반대 극에 적재되
+어 있어 이것을 하나의 요인으로 독립시켰기 때문이다
+[Table 3].
+
+Fig. 1. Q-Sort(N=51)
+Table 3. Correlations Between Types
+
+2.2.4 Q 자료처리 및 분석
+
+P표본에 대한 조사 완료 후 수집된 자료를 Q분포도
+
+1
+
+에서 가장 부정하는 경우(-6)를 1점으로 하고 가장 긍정
+
+2
+
+하는 경우(+6)는 13점을 부여하여 점수화하였다. 부여된
+
+3
+
+각 점수는 진술문 번호순으로 코딩하고 QUANL 프로그
+
+4
+
+TypeⅠ
+
+TypeⅡ
+
+Type Ⅲ
+
+1.000
+
+.316
+
+.446
+
+.381
+
+1.000
+
+.152
+
+-.416
+
+1.000
+
+Type Ⅳ
+
+.368
+1.000
+
+램을 통해 Q요인분석을 실시하였다. 최적의 요인수를
+결정하기 위하여 요인수를 3, 4, 5,로 나누어 산출하였
+
+연구대상자 40명 중 제1유형에 16명으로 가장 많았
+
+고, 그 결과 각 유형의 고유성이 인정될 수 있는 아이겐
+
+으며, 인자 가중치가 가장 높은, 각 유형을 대표하는 사
+
+값과 상관관계를 고려하여 3개의 요인수를 선택하였다.
+
+람은 제1유형은 04번, 제2유형은 17번, 제3유형은 27번,
+
+제2유형에 적재된 Q소트 중 약 47%가 반대 극에 적재
+
+제4유형은 40번이었다. [Table 4].
+
+되어 있어 이것을 하나의 요인으로 독립시켜 최종적으로
+
+이상에서 수집된 자료를 분석한 결과, 가상화폐에 대
+
+는 4개의 유형으로 나누어 분석하였다. 각 유형별 분석
+
+한 20대 청년세대의 주관적 인식유형은 4가지 유형으로
+
+에는 각 유형에서 우선 Q진술문 중 강한 긍정을 보이는
+
+나타났으며, 각각의 유형에 대해 ‘투자수단’, ‘미래기술’,
+
+항목과 강한 부정을 보이는 항목(Z≧±1.00), 또한 개별
+
+‘도박 같은 놀이의 일종’, ‘거품 같은 일시적 유행’ 이라
+
+진술문항에 대한 특정 유형의 표준점수가 다른 유형의
+
+고 명명했다.
+
+표준점수와 두드러진 차이를 나타내는 항목, 마지막으로
+140
+
+20대 청년세대의 가상화폐에 대한 주관성 연구
+
+이상에서 제1유형은 화폐로서의 실질적인 가치보다
+
+Table 4. Types, Factor weight, and Demographic
+Characteristics for P-sample
+Type
+
+No
+02
+04
+06
+07
+08
+09
+10
+Type 18
+Ⅰ
+21
+(N=16)
+24
+32
+33
+36
+37
+38
+
+16
+
+Age Weight Type No Sex Age Weight
+21
+.3065
+12
+f 24 .7061
+25 1.1149
+13 m 25 .8852
+27
+.3243
+14 m 24 .3902
+21
+.6103
+15
+f 27 .6813
+27
+.2573
+19 m 24 .7787
+25
+.5019
+20 m 24 .2691
+Type
+25
+.7193
+22
+f 24 .3847
+Ⅲ
+24
+.1924
+25
+f 25 .5937
+(N=14)
+24
+.9598
+27
+f 25 .8873
+25
+.4985
+28
+f 21 .2920
+27
+.3794
+30 m 25 .4333
+28
+.3577
+31
+f 26 .4788
+21
+.5137
+34
+f 20 .4706
+20
+.4319
+35 m 29 .5984
+20
+.6298
+03
+f 22 .4045
+m 21
+.3577
+11
+f 25 .2167
+m 25 2.1798 Type
+23 m 26 .6917
+f 27 1.0194
+Ⅳ
+
+26
+
+f
+
+25
+
+01
+
+f
+
+25
+
+.5971
+
+05
+
+f
+
+25
+
+.2998
+
+39
+17
+Type
+Ⅱ
+(N=5)
+
+는 현재 투자하면 수익이 얼마나 나는지에 대한 관심이
+크고, 부동산과 같이 투자 가치가 있는 대상으로 보는 유
+
+Sex
+f
+m
+f
+m
+f
+m
+m
+m
+m
+m
+m
+f
+f
+m
+f
+
+1.1463 (N=5)
+
+29
+
+m
+
+26
+
+.6580
+
+40
+
+f
+
+22
+
+.9277
+
+형으로 제1유형을 가상화폐를 ‘투자 수단’ 으로 보는 유
+형으로 명명하였다.
+3.2.2 제2유형(N=5): 미래기술
+
+제2유형에 나타난 가장 대표적인 진술문으로 긍정적
+인 진술문은 Q1(Z값=2.04), Q7(Z값=1.92)등이며, 부정
+적인 진술문은 Q11(Z값=2.00), Q16(Z값=2.00)등으로
+나타났다[Table 1].
+제2유형에 가장 전형적인 대상자(17번,
+
+가중치
+
+2.1798) 또한 진술문(Q1, Q7)에 가장 동의, 진술문(Q15,
+Q16)에 가장 반대하는 것으로 응답했다. 심층면담 결과,
+거래단계를 줄여주면서 자금의 흐름이 투명한, 새로운
+화폐로서 그만큼 투자가치와 전망이 밝다고 생각한다고
+응답하였다. 그러나 가상화폐에 대한 해킹사례가 보도되고
+마약 밀수 등 범죄에 악용될 소지가 있음을 지적하였다.
+유형2와 다른 유형 간의 차이가 가장 큰 진술문 Q1
+(차이=2.706)에 다른 유형보다 가장 동의하였으며 Q15
+
+3.2 유형별 특성
+
+(차이=-2.826)는 다른 유형보다 가장 동의하지 않았다.
+
+3.2.1 제1유형(N=16): 투자수단
+
+제2유형은 화폐의 가치에 대한 새로운 현상을 외면하는
+
+제1유형에 나타난 가장 대표적인 진술문으로 긍정적
+
+것은 옳지 않다고 보았다. 또한 현재 투자를 해서 수익을
+
+인 진술문은 Q31(Z값=2.25), Q4(Z값=2.03), Q20(Z값
+
+내는 것보다는 미래의 기술 가치에 대해 중요하게 생각
+
+=1.87), Q9(Z값=1.80)등이며, 부정적인 진술문은 Q36(Z
+
+하는 것으로 나타났다. 그렇기 때문에 제2유형은 ‘Q3(차
+
+값=-1.66), Q39(Z값=-1.64)등으로 나타났다[Table 1].
+
+이=3.129).’, ‘Q15(차이=-2.771).’ 에서 제3유형과 가장
+
+제1유형에 가장 전형적인 대상자는(4번, 가중치
+
+큰 차이를 보였다. 제2유형의 후속면담에서도 가상화폐
+
+1.1149) 진술문(Q4, Q31)에 가장 동의, 진술문(Q39,
+
+라는 새로운 화폐 등장은 큰 가치가 있다고 생각하며 가
+
+Q43)에 가장 반대하였다. 유형1과 다른 유형 간의 차이
+
+상화폐가 형태는 보이지 않지만, 실물 형태가 없다는 특
+
+가 가장 큰 진술문 Q4(차이=1.959)는 다른 유형보다 가
+
+성이 더욱 우리를 편리하게 만들어 줄 것이라고 하였다.
+
+장 동의하였으며, Q33(차이=-1.653)은 다른 유형보다 가
+
+또한 상용화되는데 시간이 소요되겠지만 다가올 변화를
+
+장 동의하지 않는 것으로 나타났다. 또한 제1유형은 가
+
+외면하지는 못할 것이라고 대답하였다. 그렇기 때문에
+
+상화폐에 관심이 많으며 일찍 투자 하지 못한 것에 대해
+
+미비한 부작용을 막기 위한 방안으로 거래소 자체를 폐
+
+아쉬워하는 모습을 보였다. 후속면담에서도 돈을 벌었다
+
+쇄하는 것은 결코 문제를 해결할 수 없다고 하였다. 또한
+
+는 주변의 이야기를 들으면 부럽고 일찍 투자하지 못한
+
+가상화폐를 거래하는 것은 도박이나 사행성 게임과 다르
+
+것에 대해 아쉽다고 언급하였다. 하지만 투자 수익이나
+
+므로, 중독이라는 시각에서 볼 수 없으며, 지금의 비트코
+
+손실은 개인의 책임이기 때문에 한국에서 사라져야 한다
+
+인 투기 시장은 정부의 규제와 언론에 노출되는 다양한
+
+는 등의 부정적인 시각은 아니라고 했다. 그렇지만 너무
+
+의견들로 인해 과열된 양상을 보이는 듯해서 조금은 서
+
+깊게 빠지거나 다른 일을 못한다면 문제가 될 것이기 때
+
+로 의견을 받아들이고 합의하는 과정이 필요하다고 응답
+
+문에 정부의 규제와 가상화폐에 대한 교육, 지식은 필요
+
+하였다.
+
+하다고 보며, 그렇게 된다면 분명 수익을 낼 수 있을 것
+
+이상에서 제2유형은 가상화폐를 신기술 제품으로 보
+
+이라고 응답했다.
+141
+
+한국산학기술학회논문지 제19권 제8호, 2018
+
+며, 화폐 혁명의 하나로 보는 유형으로 제 2유형을 가상
+
+제4유형에 가장 전형적인 대상자(40번, 가중치 .9277)
+
+화폐를 ‘미래기술’ 로 보는 유형으로 명명하였다.
+
+는 Q9, Q11에 가장 동의하고 Q1, Q5에 가장 반대하였
+다. 유형4와 다른 유형 간의 차이가 가장 큰 진술문
+
+3.2.3 제3유형(N=14): 도박 같은 놀이의 일종
+
+Q11(차이=3.337)에 다른 유형보다 가장 동의하였으며
+
+제3유형에 나타난 가장 대표적인 진술문으로 긍정적
+
+Q1(차이=-2.601)은 다른 유형보다 가장 동의하지 않는
+
+인 진술문은 Q8(Z값=2.00), Q48(Z값=1.82), Q50(Z값
+
+것으로 나타나 제2유형과 가장 대립되는 것으로 나타났
+
+=1.74), Q15(Z값=1.21) 등이며, 부정적인 진술문은
+
+다. 제4유형은 가상화폐는 실체가 없기 때문에 사용가치
+
+Q5(Z값=2.83), Q39(Z값=1.86), Q11(Z값=1.65) 등으로
+
+가 제로에 가깝고, 앞으로도 화폐로서의 역할을 기대하
+
+나타났다[Table 1].
+
+기는 어렵다고 보았다. 후속면담에서도 가상화폐는 사용
+
+유형3과 다른 유형 간의 차이가 가장 큰 진술문 Q33
+
+가치가 있는 여러 자산들과는 다르게 화폐의 역할을 하
+
+(차이=2.201)에 다른 유형보다 가장 동의하였으며 Q4
+
+기에는 바람직하지 않으며, 내재가치와 사용가치가 없는
+
+(차이=-2.457)는 다른 유형보다 가장 동의하지 않는 것
+
+네델란드 튤립버블과 다를 바 없다고 응답했다. 또 다른
+
+으로 나타나 제1유형과 가장 대립되는 것으로 나타났다.
+
+응답자는 언젠가는 화폐의 대용품으로 사용될지 모르나
+
+후속면담에서는 일에 집중을 하지 못하거나 일상생활 자
+
+현 상황과 같은 관심은 일시적인 유행에 따른 사람들의
+
+체의 패턴이 무너질 것 같아서 가상화폐 투자에 관심을
+
+행동심리에 불과하다고 생각한다며 이를 받아들이기 위
+
+두지 않는다고 응답했다. 한번 큰돈을 번다면 많은 사람
+
+해서는 제도적으로 보다 정밀한 준비가 되어야 한다고
+
+이 도박에 빠지는 것처럼 헤어 나오지 못할 것 같고, 또
+
+생각한다고 응답하였다.
+
+한 신기루와 같아서 너무 심각하게 쫒다보면 결국 허망
+
+이상에서 제4유형은 전통적 화폐 가치관을 가지고 있
+
+하다는 것을 깨달을 것이라고 응답하였다. 노력 없이 돈
+
+는 사람들로 가상화폐는 미래에도 화폐로 사용될 수 없
+
+을 몇 배로 벌게 되면 취업이 불투명한 상태에서 한방의
+
+는 네델란드 튤립버블과 같은 일시적 현상으로 인식하는
+
+역전을 노리는 사람 또한 있겠지만 주변에서 가상화폐를
+
+것으로 나타나 이에 제4유형을 가상화폐를 ‘거품 같은
+
+하는 사람들은 오히려 직장이 안정되고 여유가 있는 사
+
+일시적인 유행’ 으로 보는 유형으로 명명하였다.
+
+람들이었다고 응답했다. 어느 정도 피해를 감수할 수 있
+는 능력이 되는 사람들이 더 큰 금액을 투자하고 한번
+
+4. 결론 및 논의
+
+돈을 크게 벌면 또 투자를 하게 되기 때문에 가상화폐는
+마약과 같은 중독성이 있다고 응답했다. 또한 여유 돈으
+
+본 연구는 Q방법론을 적용하여 20대 청년세대의 가
+
+로 해 볼 수 있는 놀이 같은 것으로 생각하고, 개인마다
+
+상화폐에 대한 인식 유형을 탐색하고, 유형에 따른 특성
+
+가치관의 차이가 있으므로, 본인이 투자하지 않은 것이
+
+을 분석하였다. 그 결과 20대 청년세대의 가상화폐에 대
+
+아쉽거나 상대적 박탈감은 들지는 않는다고 응답했다.
+
+한 인식유형은 4개로 분류되었다.
+
+이상에서, 제3유형은 가상화폐가 갑자기 이슈화가 되면
+
+첫째, 가장 많은 대상자가 속해 있는 제1유형은 가상
+
+서 지나치다 싶을 정도로 과열된 양상을 보이고 있고, 중
+
+화폐를 ‘투자수단’으로 보는 유형으로, 가상화폐를 부동
+
+독성이 있는 투기수단으로서 여유 있는 사람들이 한다고
+
+산과 같이 투자 가치가 있는 대상의 하나로 보는 유형이
+
+생각하는 유형으로, 이에 제3유형을 가상화폐를 ‘도박
+
+다. 기성세대처럼 큰돈으로 부동산 등에 투자할 수 없으
+
+같은 놀이의 일종’ 으로 보는 유형으로 명명하였다.
+
+나, 재무지식이나 자산이 부족해도 간편하게[19] 사고팔
+고 매매수익을 낼 수 있다는 점에서 새로운 투자대상으
+
+3.2.4 제4유형(N=5): 거품 같은 일시적인 현상
+
+로 가상화폐에 접근하고 있는 것으로 보인다[7]. 이러한
+
+제4유형에 나타난 가장 대표적인 진술문으로 긍정적
+
+연구 결과는 젊은 층의 돈이 가상화폐에 몰리는 이유가
+
+인 진술문은 Q11(Z값=1.69), Q12(Z값=1.60), Q22(Z값
+
+접근이 쉽고 고수익을 올릴 수 있을 것이라는 기대감 때
+
+=1.57), Q24(Z값=1.55) 등이며, 부정적인 진술문은
+
+문이라는 주장을 뒷받침한다[20]. 이러한 기대감은 가상
+
+Q3(Z값=-2.23), Q1(Z값=-1.94), Q6(Z값=-1.86) 등으로
+
+화폐가 폭락하거나 예상한 만큼의 수익을 올리지 못할
+
+나타났다[Table 1].
+
+경우에는 우울이나 불면, 무기력 등의 심리적 증상과 더
+142
+
+20대 청년세대의 가상화폐에 대한 주관성 연구
+
+넷째, 제4유형은 가상화폐를 ‘거품 같은 일시적 유행’
+
+불어 자살충동을 불러일으킴으로 개인적 차원뿐만 아니
+라 사회적 차원의 문제를 야기 시킬 수 있다[8,12]. 따라
+
+으로 보는 유형이다. 이는 가상화폐의 부정론[29]의 입
+
+서 이러한 유형에게는 우울 및 자살충동 등과 같은 심리
+
+장과 일치하며, ‘가상화폐는 실체가 없고 경제적 가치도
+
+적 영향력을 줄이기 위한 예방 대책 등의 시스템 구축이
+
+없다.’는 의견을 뒷받침하고 있다[30]. 선행연구에서도
+
+필요할 것으로 사료되며 경제 교육을 통하여 올바른 투
+
+가상화폐는 화폐의 주요 기능인 가치저장 수단이 될 수
+
+자전략과 무분별한 투자의 위험성을 알리는 교육이 필요
+
+없기 때문에 화폐로 발전하기는 어려우며 금과 같은 실
+
+할 것이다.
+
+물화폐와는 달리 가상화폐의 가치는 참여자들의 신뢰에
+
+둘째, 제2유형은 가상화폐를 ‘미래기술’로 보는 유형
+
+기반하고 있기 때문에 이러한 신뢰가 무너지면 버블 붕
+
+이다. 선행연구에서도 관련분야의 전문가들은 현재는 투
+
+괴와 같은 문제도 야기될 가능성이 있음을 지적하고 있
+
+기성 자금의 유입으로 도박판처럼 보이지만 장기적으로
+
+다[31].
+
+보면 가상화폐의 효용이 커짐으로 미래가치에 대한 잠재
+
+본 연구 결과를 통해 가상화폐에 대한 20대들의 인식
+
+력과 가치 상승의 도구로서 그 전망성을 인정할 필요가
+
+이 ‘좋다.’, ‘나쁘다.’로 나뉘는 것이 아니라 각기 다른
+
+있다고 지적하며 규제방안으로 거래소를 폐쇄하는 것은
+
+포인트에 주목하고 있으며, 그에 따른 인식의 차이가 존
+
+결코 문제를 해결할 수 있는 방법이 아니라고 주장하고
+
+재함을 발견할 수 있었다. 가상화폐에 대한 사회적 관심
+
+있다. 이러한 연구결과는 가상화폐 긍정론[21-22]의 입
+
+이 큰 현 상황에서 사회구성원들 간의 인식차이로 인해
+
+장과 일치하며, 가상화폐 거래는 부정한다고 부정되는
+
+갈등과 논란의 여지가 생길 수 있으나 인식 차이를 분석
+
+영역이 아니며 자본주의의 자유경제체제에서 통제하기
+
+하여 각 유형 특성에 맞게 논의했다는 점이 가장 큰 의
+
+에는 한계가 있을 것이라는 선행연구를 뒷받침하고 있다
+
+의라고 할 수 있다.
+
+[23]. 또한 가상화폐에 대한 수요와 이를 충족시킬 수 있
+
+가상화폐에 대한 투자 접근은 새로운 화폐 개념에 대
+
+는 기술 모두 존재하는 현 상황을 고려한다면 결국 어떠
+
+한 정확한 이해를 위하여, 공청회나 교육을 통해서 활발
+
+한 형태로든 가상화폐는 정착할 것이라고 보고 있다
+
+하게 논의하고 공론화하여 불안을 해소하는 노력을 할
+
+[24]. 그러나 가상화폐를 통해 사기 탈취 등 범죄피해를
+
+필요가 있다. 더불어 초기에 발생할 수 있는 비합리적 투
+
+당했을 때와 관련한 사회적 안전장치가 마련되어 있지
+
+자 행동에 대해 합리적인 대책이 마련되어야 한다고 본
+
+않은 상태로[16], 블록체인과 같은 과학기술 발전에 발
+
+다. 또한 가상화폐 투자와 관련된 새로운 정신건강 위기
+
+맞추는 사회적 보호 장치 마련이 병행되어야 할 것이다.
+
+상황의 특성을 예측하고 예방할 수 있는 사회 및 국가적
+
+셋째, 제3유형은 가상화폐를 ‘도박 같은 놀이의 일종’
+
+차원에서의 심리적 위기 대응책을 마련하는 것도 필요할
+
+으로 보는 유형이다. 이러한 연구결과는 우리나라의 가
+
+것으로 사료된다. 마지막으로 후속연구로 가상 화폐 교
+
+상화폐 거래의 경우에는 사실상 투기·도박과 비슷한 양
+
+육을 통한 20대 청년세대의 인식변화 연구 및 각 세대
+
+상이며 산업 발전에서의 긍정적 측면보다는 개인의 금전
+
+간의 주관적 인식을 비교해볼 것을 제언한다.
+
+적 피해를 유발할 것이라는 주장과 가상화폐 특성상 24
+시간 거래하기 때문에 한탕주의 심리에 현혹되어 쉽게
+
+References
+
+중독될 수 있다는 주장을 뒷받침하고 있다[25-26]. 실제
+로 가상화폐에 대한 각 국가의 모호한 대책과 규제가능
+
+[1] European Banking Authority, Warning to consumers on
+virtual currencies, 2013.
+
+성으로 그 가치가 널뛰기하며 일종의 도박수단으로 여겨
+지기도 하고 있다[27]. 이처럼 화폐에 대한 신뢰성 보다
+
+[2] H. S. Yang, Y. M. Kwon, "Internet Money - Bit Coin
+Trends", Proceedings of the Korea Multimedia Society
+Conference, Vol.19, No.1 pp.28-36, 2015.
+
+투기성이 부각된다면, 유통에 실패를 하게 되고 대안화
+폐로 발전하지 못하게 될 가능성이 높다[28]. 따라서 이
+
+[3] J. H. Baek, "Virtual currency Bitcoin Landing first store
+to trade bakery", JTBC NEWS, December, 2013.
+
+유형을 위해서는 가상화폐의 장기적인 활용 및 성장을
+
+[4] A. R. Cho, J. D. No, Although the fear of closing has
+decreased. "Payment is still a long way off", The Korea
+Economic Daily, January, 2018.
+
+위해 정부가 제도권 내로 편입하여 가격을 안정화 시킬
+수 있는 프로젝트를 마련하고 투기적 수요에 대한 조정
+
+[5] B. G. Min, Y. G. Sung, W. I. Park, "Issues and Policy
+Implications of Bit Coin and Block Chain.", Issues &
+
+이 필요할 것이다.
+
+143
+
+한국산학기술학회논문지 제19권 제8호, 2018
+
+Diagnostics, No.307 pp.1-27, 2018.
+
+[24] J. Y. Jun, E. J. Yeo, "Understanding Bitcoin : From the
+Perspective of Monetary Economics", Korea Business
+Review, Vol.18, No.4 pp.211-239, November, 2014.
+
+[6] Korea Financial Investors Protection Foundation, 2017,
+Virtual Money Users Survey Results, 2018.
+
+[25] J. H. Yoon, "Virtual Currency 'Flower Road and Dirt
+Road", The Yeongnam Ilbo, 2018.
+
+[7] S. G. Ryu, "Great Plains' Chin Daeje, Virtual Money
+and Block Chain 'Between the Ideals and the Reality",
+Sports Q, 2018.
+
+[26] G. R. Lee, "Anxiety about returning profit All day
+virtual money chart only. Followers of addicts", Market
+economy newspaper, 2017.
+
+[8] K. T. Kim, "Virtual currency" 70 million won to 10
+million won, "Anger, melancholy", Financial news, 2018.
+
+[27] M. H. Song, "Traditional Ownership Theory and the
+Future of Virtual Currency", Journal of Korean Law,
+Vol.5, pp.33-56, 2018.
+
+[9] G. J. Kim, "Money Attitudes and personal Finance of
+College Students", Consumer Culture Research, Vol.6,
+No.3 pp.33-50, 2003.
+
+[28] S. H. Gu, P. Wang, T. Sun, “A Study of the Factors
+Influencing Acceptance of Virtual Currency: Focused on
+Technology Acceptance Model”, Journal of the Korea
+Academia-Industrial cooperation Society, Vol.15, No.7,
+pp.4122-4131, 2014.
+DOI: https://dx.doi.org/10.5762/KAIS.2014.15.7.4122
+
+[10] S. C. Park, H. G. Park, D. W. Shin, Pay attention to these
+companies when investing in P2P loans, Supervisory
+Bureau of the Financial Supervisory Service(FSC), 2018.
+[11] E. Whitley, D. Gunnell, D. Dorling, G. D. Smith,
+“Ecological Study of Social Fragmentation, Poverty, and
+Suicide”, British Medical Journal(Clinical research ed.),
+Vol.319, No.7216, pp.1034-1037, 1999.
+DOI: https://dx.doi.org/10.1136/bmj.319.7216.1034
+
+[29] J. S. Kim, "Bitcoin, Warren Buffett ‘Rat’, Bill Gates
+‘Fool Theory’", Seoul Economy, 2018.
+[30] G. B. Bin, "Will virtual money be money?", kinews, 2018.
+
+[12] D. M. Fergusson, L. J. Woodward, L. J. Horwood, “Risk
+factors and live process associated with the onset of suicidal
+behavior during adolescence and early adulthood”,
+Psychological Medicine, Vol.30, No.1, pp.23-39, 2000.
+DOI: https://dx.doi.org/10.1017/S003329179900135X
+
+[31] Y. S. Jeon, S. H. Yun, W. Y. Cha, "Should Korean
+economy be similar to Long term slowdown of Japan
+economy?", Korea Insurance Research Institute,
+Vol.2014, No.6, pp.1-105, 2014.
+
+[13] G. H. Jo, H. J. Lee, "A Content Analysis of Subjective
+Perception of cause and intervention of suicide among
+College Students", Korean social welfare education,
+Vol.22, No.22 pp.105-133, 2013.
+
+이 영 선(Young Sun Rhee)
+
+[14] H. K. Kang, "To protect potential investors in the
+KOSDAQ market A Study on the Operation Direction
+of the Retirement System", Korea University, 2013.
+
+[정회원]
+
+•1999년 2월 : 이화여자대학교 사회
+복지학과 (학사)
+•2009년 2월 : 이화여자대학교 대학
+원 사회복지학과 (박사)
+•2009년 9월 ~ 현재 : 조선대학교
+행정복지학부 부교수
+
+[15] S. Y. Jeong, "Virtual Currencies and VAT Issues", Korea
+International Taxation Association, Vol.32, No.1, 2016.
+[16] Y. D. Song, S. H. Jang, "Case analysis and
+countermeasures for each type of crime related to bit
+coin", Korean Public Administration Review, Vol.14
+No.3, pp.141-166, November, 2017.
+[17] H. K. Kim, "Subjectivity Research Q Methodology and
+Theory", Korean Subjectivity Research Society, Vol.1,
+pp.15-33, 1996.
+
+<관심분야>
+사회복지실천, 의료사회복지
+
+[18] H. K. Kim, "Q Methodology and Theory : P Sampling
+and Q Sorting", Korean Subjectivity Research Society,
+Vol.15, No.15 pp.5-19, 2007.
+[19] G. J. Kim, J. H. Hong, "Financial knowledge and personal
+financial management behavior of college students",
+Korea Home Management Association, pp.117-122, 2002.
+
+김 수 연(Su Yeon Kim)
+
+[정회원]
+
+•2011년 2월 : 동국대학교 사회과학
+대학원 사회복지학과 (석사)
+•2015년 4월 : 조선대학교 일반대학
+원 사회복지학과 (박사수료)
+
+[20] S. J. Hwang, "Virtual currency money, 2030 households,
+investment of 1~5million won", newspim, 2018.
+[21] S. J. Kim, "Virtual money in the era of the 4th
+industrial revolution ②Shade of virtual money", Korean
+Christian Bulletin, 2018.
+[22] W. S. Kim, "Other Voices Yushimin vs Jeong Jae-seung,
+Virtual Currency·Block Chain", wikitree, 2018.
+[23] S. M. Ko, "The 'virtual currency specialization and the
+virtual money special district' contrary to 'the
+unconditional closing of the virtual money exchange",
+Justice Administration, Vol.59, No.3 pp.2-22, 2018.
+
+<관심분야>
+사회복지실천, 정신건강사회복지
+
+144
+
+20대 청년세대의 가상화폐에 대한 주관성 연구
+
+김 혜 지(Hye Ji Kim)
+
+[정회원]
+
+•2016년 8월 : 우송대학교 사회복지
+과 (학사)
+•2018년 2월 ~ 현재 : 조선대학교
+사회복지과(석사과정)
+
+<관심분야>
+사회복지실천, 사회복지정책
+
+김 한 나(Han Na Kim)
+
+[정회원]
+
+•2015년 2월 : 광주보건대학교 사회
+복지과 (학사)
+•2017년 2월 : 광주대학교 사회복지
+학부 (학사)
+•2018년 2월 ~ 현재 : 조선대학교
+사회복지과(석사과정)
+
+<관심분야>
+사회복지실천, 의료사회복지
+
+145
+
+

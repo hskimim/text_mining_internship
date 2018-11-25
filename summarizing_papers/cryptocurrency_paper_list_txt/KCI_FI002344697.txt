@@ -1,0 +1,542 @@
+Journal of the Korean Data Analysis Society (April 2018)
+Vol. 20, No. 2, pp. 791-799
+
+가상 화폐의 비선형성에 관한 연구
+최서연1, 신정순2, 임예진31)
+
+요 약
+본 연구에서는 블록체인 시스템을 기반으로 하는 가상화폐인 비트코인에 대한 특성을 살펴보
+았다. 비트코인(bitcoin) 가격 지수(price index)를 비선형 모형인 SETAR(self-exciting threshold
+autoregressive model) 모형을 사용하여 비트코인 가격의 비선형성과 국면의 특성을 분석하였다.
+연구 결과, 비트코인 가격 지수는 비선형성을 가지고 있는 것으로 나타났다. 안정기(1기)에 가격
+변동시 하락이 지속되었고, 변동기(2기)에서는 가격 상승이 지속된다는 결과가 도출되었다. 즉
+비트코인의 가격은 하락기에는 안정적인 반면, 상승기에는 변화가 급격하고 지속된다는 결과를
+알 수 있다. 이와 같은 연구결과로 미루어볼 때, 향후 비트코인과 같은 블록체인기술을 활용한
+가상화폐시장의 발전을 위해서는 가격 변동성과 비선형성을 고려한 통화제도와 금융제도의 수립
+이 반드시 선행되어야 한다는 함의를 도출 할 수 있다.
+
+주요용어 : 비트코인, 가상화폐, 비대칭성, 비선형성, SETAR모형.
+
+1. 서론
+4차 산업혁명의 6대 기술은 스마트폰, 비대면 인증, 빅데이터, 인공지능, 블록체인, 가상화폐라고
+한다. 6대 기술은 대부분이 금융거래의 혁신의 틀을 제공하고 있다고 볼 수 있다.
+4차 산업 시대의 화폐란 단지 지폐만을 의미하지 않는다. 오늘날 화폐는 지폐와 신용카드, T-머
+니, 카카오페이, 네이버페이 등과 같은 결제 시스템 그리고 블록체인 기반의 가상화폐까지 다양하
+다. 화폐는 원시시대 물물교환을 시작으로 금속 화폐 시대를 거쳐 현재 통용되는 지폐가 생겨났고,
+신용사회가 도래하며 신용카드가 생겼다. 그리고 핀테크 시대에 들어서면서 2009년 블록체인시스
+템(block chain system)을 기반으로 하는 가상화폐가 등장하였다.
+가상화폐 거래 중 90%를 차지하는 비트코인(bitcoin)은 처음 만들어진 2009년부터 4년 동안은 매
+10분마다 수학 문제를 푸는 사람에게 50비트코인을 발행하였다. 현재는 10분마다 25비트코인이 발
+행되고 이 금액은 점점 줄어들어 2040년에는 총 2100만 비트코인을 끝으로 발행을 종료한다.
+기존의 지폐와 가상화폐의 가장 큰 차이는 중앙은행이 존재하지 않고 디지털 원장을 모든 거래
+당사자가 분산해서 보관한다는 점과 가치가 정해져 있지 않다는 것이다. 즉 해킹을 하려면 모든
+거래 당사자가 보관하고 있는 원장을 모두 해킹해야 한다. 그리고 현재 주로 사용하고 있는 지폐
+와 같이 가치가 정해져 있지 않고 변동한다.
+비트코인은 2009년부터 거래되기 시작하였으며, 거래 초기에는 비트코인의 존재가 잘 알려지지
+않아 주로 비트코인을 채굴하려는 전문가를 중심으로 채굴 및 거래가 되어 2013년경까지 가격에
+1
+
+03760 서울시 서대문구 이화대로 52, 이화여자대학교 일반대학원 경영학과 박사과정.
+E-mail : anchoi@ewha.ac.kr
+2
+(교신저자) 03760 서울특별시 서대문구 이화여대길 52, 이화여자대학교 경영대학 재무관리 교수.
+E-mail : shinjs@ewha.ac.kr
+3
+13506 경기도 성남시 분당구 야탑로 105번길 19, 한국기업환경연구원 선임연구원. E-mail : yjlim@kbei.re.kr
+[접수 2018년 1월 20일; 수정 2018년 3월 20일, 2018년 4월 17일; 게재확정 2018년 4월 20일]
+
+792
+
+최서연, 신정순, 임예진
+
+큰 변동이 없었다. 2013년부터 비트코인 가격이 조금씩 변동하기 시작하여 2017년에 들어서면서
+변동성이 커졌다. 2009년 비트코인은 최초 24달러(/1비트코인)로 거래를 시작하였으나, 2017년 6월
+기준으로 2500달러(/1비트코인)에 거래되고 있다.
+이미 캐나다에서는 비트코인을 현금화할 수 있는 현금자동입출금기가 설치되었으며, 독일과 일
+본에서는 비트코인을 결제수단으로 허용하였다. 뿐만 아니라 일부 지역에서는 자동차와 부동산 판
+매 대금을 비트코인으로 결제하는 것이 가능하다. 즉 가상현실이 아닌 일상에서도 비트코인을 자
+유롭게 사용할 수 있게 된 것이다. 이로 인하여 비트코인은 추후 가격 상승과 더불어 거래량 또한
+급격히 증가할 것이 예상된다. 이러한 추세에 대해 전문가들은 비트코인의 거품 가능성과 비트코
+인이 세계 금융 시장을 교란시킬 것이라는 우려와 비트코인의 편리성과 안전성으로 볼 때 향후 기
+축 통화의 역할을 할 것으로 기대하는 상반된 견해를 보이고 있다. 화폐의 기능은 기본적으로 가
+치 축적과 안정성, 그리고 유통의 편리성이 충족되어야 한다. 그러므로 현재까지는 결제시간이 길
+고 변동성이 큰 비트코인은 화폐로써의 기본 기능을 한다고 보기 어렵다. 최근에는 가상화폐 뿐만
+아니라 가상화폐공개(initial coin offering)에 대한 관심도 나타나고 있다. 이에 본 연구에서는 비트
+코인의 가격변동성과 비선형성에 대해 살펴보고자 한다.
+
+2. 블록체인과 비트코인
+블록체인이란 중앙 집중형 서버에 데이터를 보관하는 기존의금융거래 방식과 달리 거래 당사자
+모두에게 거래 내역을 공유하고 보관하여 관리하는 분산형 구조이다. 거래가 일어나면 해당 거래
+에 대한 블록(block)이 생성되고 그 블록을 네트워크 내 모든 참여자에게 전송한다. 따라서 모든
+거래 참여자는 거래의 타당성을 확인할 수 있고, 거래의 조작은 불가능하게 된다. 확인 된 블록은
+기존의 블록과 체인을 형성하게 된다.
+내부 조작이나 정보 유출 위험이 없어 보안성, 거래 기록이 공개되어 거래의 투명성 그리고 관
+리 비용이 불필요하여 저비용을 장점으로 한다. 반면에 개별 산업에 적합한 블록체인 플랫폼이 필
+요하고, 현행 법규가 중앙 집중형 시스템에 기반 하기 때문에 블록체인 시스템에 적합한 제도와
+거래 방식이 요구된다.
+비트코인은 블록체인에 기반 한 가상화폐이다. 채굴을 위해 참여자가 목표값을 찾고, 목표값을
+만족하는 해시값을 찾아내면 블록을 발행한다. 블록이 발행되면 네트워크에 전파하여 비트코인을
+보상받고, 해당 블록의 거래 수수료를 획득한다. 블록의 생성 주기는 네트워크 전파 속도와 보안성
+을 이유로 10분 주기로 정해져있다.
+
+3. 선행연구
+Engle(1982)은 변동성의 가변적 시간을 특성화한 ARCH(autoregressive conditional heteroskedasticity)
+모형을 제안하였다. 이 후 ARCH(autoregressive conditional heteroskedasticity)모형에 변동성의 지속성
+을 모형화한 GARCH(generalized autoregressive conditional heteroskedasticity)모형을 제시하였다
+(Bollersleve, 1986). 이후 변동성의 비대칭성을 분석하는 E-GARCH, GJR-GARCH모형 등이 제시된
+바 있다. GARCH(generalized autoregressive conditional heteroskedasticity)모형을 이용한 KOSPI지수 변
+동성 추정에 관한 연구에서는 GARCH(1,1) 모형이 KOSPI지수 로그수익률의 변동성을 추정함에 적
+합함을 제시하였다(Ahn, 2017). 미국 주가지수 변동성 예측 연구에서 GARCH모형이 ARCH모형보
+다 우수함을 증명하였다(Akgiray, 1989).
+SETAR(self-exciting threshold autoregressive model)모형은 임계자기회귀모형(threshold autoregressive
+
+가상 화폐의 비선형성에 관한 연구
+
+793
+
+model)이 발전 된 것으로 국면전환과 그에 수반되는 현상들에 대한 분석 방법론이다. 다변량 임계
+모형(threshold model)으로 확장시켜 임계벡터자기회귀모형(threshold vector autoregressive model)과 임
+계벡터오차수정모형(threshold vector error correction model)을 제시하여 장기균형과 단기 변동 과정
+을 임계값(threshold)으로 설명할 수 있음을 제시하였다(Tsay, 1998). 원유선물계약의 일별 종가 시계
+열을 SETAR(self-exciting threshold autoregressive model)모형을 적용하여 분석한 결과 과거의 수익률
+외에 다른 요소가 가격에 영향이 준다는 것을 밝혔다(Kim, Kim, 2010).
+본 연구에서는 SETAR(self-exciting threshold autoregressive model)모형을 적용하여 비선형성과 국
+면의 특성을 설명하고자 한다.
+
+4. 연구방법론
+임계자기회귀모형(threshold autoregressive model)보다 일반화된 SETAR(self-exciting threshold
+autoregressive model)모형은 시계열 자료의 비선형성을 모형화한다.  가 임계값(threshold)   를 가
+진 k-regime SETAR(self-exciting threshold autoregressive model)모형을 따른다면, 아래식과 같이 나타
+낼 수 있다.
+
+
+
+  
+     ⋯           ⋯ 
+
+이때 임계값(threshold)변수   는  ≺   ≺  를 만족하며,  와  는 양의 정수이다.  는
+    ≺  ≺⋯≺  ≺    인
+
+
+
+∼  
+
+ 
+
+정수이고,
+
+  는
+
+국면(regime)을
+
+의미한다.
+
+인 동일하고 독립적인 분포(identically and independently distributed)를 따르고, 서로 다
+
+른  에 대해 상호 독립이다. 모수  는 지연 모수이며  는 임계값(threshold)이다. 위 식을 살펴보
+면  ≻  이면 비선형모형이 된다.
+SETAR모형은 2단계로 모수를 추정한다. 우선 특정 임계값(threshold)에서 해당 국면(regime)의 선
+형모형을 최소자승법으로 추정한 후, 최소화된 잔차 제곱의 합을 구한다. 그리고 잔차 제곱의 합을
+최소화하는 임계값(threshold)이 주어지면, 국면(regime)에 해당하는 선형모형의 모수를 최소자승법을
+이용하여 추정한다.
+이 모형은 정상성을 가지는 단변량에도 적용할 수 있고, 다변량으로 확장할 수도 있으며 비정상
+성을 가지는 시계열에도 적용할 수 있는 것으로 알려져 있다.
+
+Figure 1. Bitcoin price
+
+794
+
+최서연, 신정순, 임예진
+
+5. 실증분석
+5.1. 자료
+Figure 1에서 2013년 7월경까지는 최초가격인 24달러/1비트코인을 유지하고 있으며 2013년 후반
+기부터 점차로 상승하는 것을 수 있다. Table 1은 2010년 7월 18일 ~ 2017년 6월 5일 동안의 비트
+코인 가격지수에 대한 기초통계자료를 요약하였다. 거래가격 변동이 시작 된 시점인 2013년 3월을
+기준으로 2010년 7월18일 ~ 2013년 3월17일까지를 1기(안정기), 2013년 3월 18일 ~ 2017년 6월 5일
+까지를 2기(변동기)로 구분하였다. 1기의 평균은 7.246, 2기의 평균은 497.813으로 크게 차이가 나
+타나며 표준편차 또한 7.823(1기), 363.331(2기)로 1기와 2기의 차이가 뚜렷하게 나타난다. 특히 2기
+에 변동성이 더 심하게 나타난다.
+Table 1. Descriptive statistics
+Bitcoin price index
+Period 1
+Period 2
+(2010-07-18 ~ 2013-03-17)
+(2013-03-18 ~ 2017-06-05)
+N
+974
+1541
+Mean
+7.246
+497.813
+S.D.
+7.823
+363.331
+Skewness
+2.202
+2.073
+Kurtosis
+7.073
+-58.322
+Jarque-Bera
+3441.2***
+10816***
+* note: ‘***’(‘**’) denotes that it is significant at the 1%(5%) level
+
+5.2. 단위근 검정(unit root test)
+단위근(unit root) 검정은 시계열 자료의 정상성을 검정하는 것이다. 만약 시계열이 시간에 따라
+평균과 분산이 변화한다면 그 자료는 추세(trend)를 가지는 불안정한 시계열이 된다. 이는 외부 충
+격 시 충격 효과가 무한히 지속한다는 의미이며, 가성 회귀현상이 발생하게 되어 분석 결과가 잘
+못 도출 될 가능성이 있다. 따라서 단위근 검정을 통해 시계열의 불안정성 여부를 판단해야 한다.
+본 연구에서는 ADF 검정(augmented Dickey-Fuller test)을 통해 단위근 검정을 실시하였다. 귀무가
+설과 대립가설은 아래와 같다.
+ : 단위근이 있다(불안정한 시계열이다)
+ : 단위근이 없다(안정적인 시계열이다)
+
+ADF 검정 결과는 Table 2와 같다. 비트코인 가격지수 1기와 2기 모두 단위근 검정 결과 10% 유
+의수준에서도 단위근을 기각하지 못하여 불안정한 시계열임이 밝혀졌다. 따라서 비트코인 가격지
+수로는 유의미한 결과를 도출에 어려움이 있으므로 비트코인 가격 지수의 증가율로 변환하여 다시
+검정하였다. 그 결과는 Table 2과 같이 1기, 2기의 t-통계량이 각각 -8.300, -10.316으로 귀무가설을
+1% 유의수준에서 기각하여 안정적인 시계열이었다. 따라서 본 연구에서는 정상성이 검정된 비트코
+인 가격 지수의 증가율을 이용하여 분석하였다.
+
+5.3. SETAR(self-exciting threshold autoregressive model)모형 검정
+본 연구에서는 적정시차(p)를 구하기 위해 아카이케 정보기준(AIC: Akaike information criterion)을
+
+가상 화폐의 비선형성에 관한 연구
+
+795
+
+사용하였다. 우선 시계열의 비선형성을 검정하는 방법으로는 비모수적인 검정방법인 BDS검정을
+하였다. BDS검정의 귀무가설과 대립가설은 아래와 같다.
+ : 시계열이 동일하고 독립적인(identically and independently distributed) 분포를 갖는다.
+ : 시계열이 동일하고 독립적인(identically and independently distributed) 분포를 갖지 않는다.
+
+Price
+Period 1
+Price
+Price
+Period 2
+Price
+*note: ‘***’(‘**’) denotes that it
+
+Table 2. Augmented Dickey-Fuller test
+t-statistics
+index
+1.713
+index return
+-8.300***
+index
+1.927
+index return
+-10.316***
+is significant at the 1%(5%) level
+
+p-value
+0.991
+0.000
+0.990
+0.000
+
+BDS 비선형성 검정 결과는 Table 3과 같다. 검정결과를 보면 시계열이 비선형적 의존성을 가지
+고 있어 비선형모형에 적합함을 알 수 있다. 따라서 비선형을 모형화 한 SETAR(self-exciting
+threshold autoregressive model) 모형으로 분석하였다. 우선 국면(regime)수를 2개로 결정하였다. 1기
+에는 지연모수(  )=1, 적정시차(  )=2을 선정하였고, 2기에는 지연모수(  )=1, 적정시차(  )=3일 선정하
+였다.
+
+
+
+2
+
+Period 1
+
+3
+
+4
+
+2
+
+Period 2
+
+3
+
+4
+
+Table 3. BDS test
+Bitcoin return
+Embedding dimension(m)
+BDS t-statistics
+0.038
+14.077
+0.075
+12.878
+0.113
+10.977
+0.151
+8.970
+0.038
+17.790
+0.075
+15.395
+0.113
+13.232
+0.151
+11.270
+0.038
+20.963
+0.075
+12.793
+0.113
+14.149
+0.151
+12.308
+2.234
+14.611
+4.653
+14.197
+6.979
+15.068
+9.306
+15.533
+2.236
+18.020
+4.653
+16.828
+6.979
+17.041
+9.306
+16.152
+2.236
+22.173
+4.653
+18.942
+6.979
+18.007
+9.306
+16.703
+
+p-value
+0.000
+0.000
+0.000
+0.000
+0.000
+0.000
+0.000
+0.000
+0.000
+0.000
+0.000
+0.000
+0.000
+0.000
+0.000
+0.000
+0.000
+0.000
+0.000
+0.000
+0.000
+0.000
+0.000
+0.000
+
+최서연, 신정순, 임예진
+
+796
+
+수익률 
+   수익률    수익률     ≤ 
+
+   수익률    수익률    ≻ 
+
+
+
+수익률 
+   수익률    수익률    수익률    ≤ 
+
+   수익률    수익률   수익률    ≻ 
+
+
+
+BDS검정을 통해 시계열의 비선형성을 검정하였고, 이를 근거하여 비선형 모형인 SETAR
+(self-exciting threshold autoregressive model)모형으로 분석해 본 결과  를 기준으로 1기와 2기로 구
+분할 수 있다. 1기의 Low Regime을 보면 현재의 수익률은 2일 전의 수익률에 0.148만큼 감소하며
+High Regime에서도 2일 전의 수익률이 현재의 수익률에 음의 방향으로 유의한 영향을 미침을 알
+수 있다. 2기에는 Low Regime시 3일전의 수익률이 유의하게 양의 방향으로 영향을 주며, High
+Regime에서는 1일전, 2일전, 3일전 모두 유의한 영향을 미치나 그 방향은 각기 상이하게 나타났다.
+ 값은 1기와 2기에 각각 –0.03과 3.26임을 알 수 있으며 2기에 변동성이 더 심한 것으로 나타났
+다. 1기에는 High Regime이 약84.42%이고, 2기에는 Low Regime이 약84.91%로 나타나 1기에는 상
+승 국면이 지속되며, 2기에는 하락 국면이 지속된다는 것을 알 수 있다.
+
+Period 1
+  -0.03
+
+Low regime
+15.58%
+High regime
+84.42%
+Low regime
+84.91%
+
+Period 2
+ 3.26
+High regime
+15.09%
+*note: ‘***’(‘**’) denotes that it is
+
+Table 4. SETAR test
+Estimate
+0.005**
+-0.001
+-0.148***
+0.043***
+0.056
+-0.159**
+0.276**
+-0.002
+-0.024
+0.068**
+1.246**
+0.148***
+-0.124**
+-0.126***
+significant at the 1%(5%) level
+
+t-value
+2.076
+-0.026
+-2.849
+3.812
+1.083
+-2.198
+2.096
+-0.071
+-0.633
+2.131
+2.363
+3.189
+-2.063
+-3.024
+
+p-value
+0.038
+0.979
+0.004
+0.000
+0.279
+0.028
+0.036
+0.944
+0.527
+0.033
+0.018
+0.001
+0.039
+0.003
+
+6. 결론 및 논의
+4차 산업혁명시대에 새롭게 등장한 가상화폐인 비트코인에 대한 기대와 우려가 있다. 누군가는
+화폐는 그 자체가 가지는 가치가 있을 뿐 화폐의 가치에 투자하는 것은 어리석은 일이라 하고 혹
+자는 안정성과 편리성을 볼 때 가상화폐는 기축통화로서 가치가 충분하다고 한다. 이에 본 연구는
+가상화폐 중 가장 많이 거래되고 있는 비트코인의 가격 지수가 가지는 시계열의 성질에 대한 연구
+를 진행하였다.
+비트코인 가격 지수가 가지는 BDS검정을 통해 비선형성을 확인하고, 비선형모형인 SETAR모형
+으로 분석한 결과 1기와 2기의 국면전환의 형태가 다르다는 것을 확인하였다. 1기에는 2시차 전의
+
+가상 화폐의 비선형성에 관한 연구
+
+797
+
+가격지수가 음의 방향으로 각각 1%, 5% 유의수준에서 유의미하였다. 가격 변동이 거의 나타나지
+않는 1기에는 가격이 서서히 상승하였고, 가격 변동기인 2기에는 급격히 상승하고 서서히 하락하
+는 양상으로 나타났다.
+최근 가상화폐의 투자 열풍이 안정세를 찾아가고 있다. 가상화폐의 가격 변동성으로 인한 부작
+용이 상당히 나타났으나, 향후 가상화폐의 거래는 지속적으로 증가할 것으로 예상된다. 비트코인의
+거래 편의성과 안전성, 그리고 변동성에 따라 화폐로써의 기능에 차이가 있을 것이다. 그리고 비트
+코인과 같은 가상화폐의 수요에 따라 기존의 통화제도와 금융제도에 변화가 생길 것이다. 가상화
+폐 거래의 초기 시점인 현재에는 혼선과 혼란이 있겠지만 적절할 시스템과 제도가 마련된다면 거
+래의 활성화와 신속화가 이루어 질 것이라고 본다. 그리고 가상화폐 거래 참여자의 성숙도 또한
+뒷받침되어야 건전한 거래 체계가 확립될 것이다.
+본 연구에는 2017년 6월 이후의 자료가 포함되지 않았다. 본 연구에서 2기로 정의된 2013년 3월
+18일에서 2017년 6월 5일까지의 변동성보다 2017년 6월 이후의 변동성이 더 크게 나타났다. 당시
+의 과열은 광풍에 가까웠고, 거래 중단 등의 강력한 조치가 나오기도 했다. 따라서 비트코인에 대
+한 보다 깊은 이해를 위해 2017년 6월 이후의 가격 변동성과 금융 당국의 규제에 대한 연구가 추
+후 진행되기 바란다.
+
+References
+Abramson, A., Cohen, I. (2007). On the stationarity of Markov-switching GARCH processes, Econometric Theory,
+23(3), 485-500.
+Ahn, C. H. (2017). Study on the KOSPI index estimated using GARCH model, Journal of Korean Society of
+Composite Knowledge, 5(1), 65-70. (in KOREA).
+Akgiray, V. (1989). Conditional heteroscedasticity in time series of stock returns, The Journal of Business, 62(1),
+50-80.
+Bauwens, L., Preminger, A., Rombouts, J. V. K. (2010). Theory and inference for a Markov switching GARCH
+model, The Econometrics Journal, 13(2), 218-244.
+Bollerslev, T. (1986). Generalized autoregressive conditional heteroskedasticity, Journal of Econometrics, 31(3),
+307-327.
+Brooks, C. (1997). GARCH modelling in finance: a review of the software options, The Economic Journal,
+107(443), 1271-1276.
+De Bondt, W. F. M., Thaler, R. (1985). Does the stock market overreact?, The Journal of Finance, 40(3), 793-805.
+Dueker, M. J. (1997). Markov switching in GARCH processes and mean-reverting stock-market volatility, Journal of
+Business & Economic Statistics, 15(1), 26-34.
+Engle, R. F. (1982). Autoregressive conditional heteroscedasticity with estimates of the variance of United Kingdom
+inflation, Econometrica, 50(4), 987-1008.
+Fama, E. F. (1970). Efficient capital markets: A review of theory and empirical work, The Journal of Finance,
+25(2), 383-417.
+Kim, T. H. (2016). The impact of index return and information trading volume on the intraday implied volatility,
+Journal of the Korean Data Analysis Society, 18(6), 3155-3172. (in Korean).
+Kim, T. H., Jung, S. M., Jung, D. S. (2013). The dynamics of KOSPI200, KOSPI200 futures, and KOSPI200
+options, Journal of the Korean Data Analysis Society, 15(6), 3383-3396. (in Korean).
+Kim, E. H., Kim, C. S. (2010). Testing and modeling SETAR, Korea Trade Association Seminar and Discussion,
+11(1), 265-270. (in Korean).
+Lee, S. G., Jung, D. S. (2017). An empirical study on the Fama-French 3 factor and volatility index, Journal of the
+Korean Data Analysis Society, 19(6), 3139-3148. (in Korean).
+
+798
+
+최서연, 신정순, 임예진
+
+Lee, T. W., Jung, J. S. (2012). The role of private information in KRW/USD volatility, Journal of the Korean Data
+Analysis Society, 14(6), 3217-3234. (in Korean).
+Rapach, D. E., Strauss, J. K. (2008). Structural breaks and GARCH models of exchange rate volatility, Journal of
+Applied Econometrics, 23(1), 65-90.
+Tsay, R. S. (1989). Testing and modeling threshold autoregressive processes, Journal of the American Statistical
+Association, 84(405), 231-240.
+
+가상 화폐의 비선형성에 관한 연구
+
+799
+
+A Study on Virtual Currency
+Seoyun Choi1, Jungsoon Shin2, Yejin Lim32)
+
+Abstract
+This study has studied the asymmetry and nonlinearity of bitcoin price volatility, with
+the opinion of various experts about whether the bitcoin of virtualization will be a
+disturbing financial market or a new key currency. This paper shows that bitcoin price index
+has the asymmetric volatility and nonlinearity. For this purpose, the bitcoin pricing index is
+tested using the nonlinear model, SETAR (self-exciting threshold autoregressive model). The
+results show that the bitcoin price index has nonlinearity and the cluster phenomenon
+appears in the volatility. In the stable period (1), the price fluctuation period continued to
+decline and the price fluctuation period (2) continued to rise. This means that if the price of
+the bitcoin begins to fluctuate, this phenomenon will continue for a considerable period of
+time. This study suggests that monetary policy and monetary system should be preceded by
+price fluctuation and non-linearity in order to develop the virtual money market using block
+chain technology such as bit coin.
+Keywords : Bitcoin, Virtual currency, Asymmetric volatility, Nonlinearity, SETAR
+model.
+
+1
+
+Graduate Student, Business Administration Finance, Ewha Womans University, Ewhayeodae-gil 52,
+Seodaemun-gu, Seoul 03760, Korea. E-mail : anchoi@ewha.ac.kr
+2
+Corresponding Author) Professor, Business Administration Finance, Ewha Womans University,
+Ewhayeodae-gil 52, Seodaemun-gu, Seoul 03760, Korea. E-mail : shinjs@ewha.ac.kr
+3
+Researcher, Korea Business Environment Institute, Yatap-ro 105beon-gil 19, Bundang-gu, Seongnam-si,
+Gyeonggi-do 13506, Korea. E-mail : yjlim@kbei.re.kr
+[Received 20 January 2018; Revised 20 March 2018, 17 April 2018; Accepted 20 April 2018]
+
+
